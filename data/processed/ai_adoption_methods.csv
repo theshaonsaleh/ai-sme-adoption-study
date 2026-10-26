@@ -1,0 +1,208 @@
+category,method,percentage,size_band
+Manufacturing,Developed in-house,0.168,Industry
+Manufacturing,Outsourced to external providers or third parties,0.052,Industry
+Manufacturing,Through purchase of external software or ready-to-use,0.245,Industry
+Manufacturing,Not sure,0.181,Industry
+Manufacturing,Not applicable,0.381,Industry
+Construction,Developed in-house,0.057,Industry
+Construction,Outsourced to external providers or third parties,0.09,Industry
+Construction,Through purchase of external software or ready-to-use,0.073,Industry
+Construction,Other,0.085,Industry
+Construction,Not sure,0.38,Industry
+Construction,Not applicable,0.319,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Developed in-house,0.055,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Outsourced to external providers or third parties,0.117,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Through purchase of external software or ready-to-use,0.27,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.307,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not applicable,0.268,Industry
+Information and communication,Developed in-house,0.308,Industry
+Information and communication,Outsourced to external providers or third parties,0.122,Industry
+Information and communication,Through purchase of external software or ready-to-use,0.523,Industry
+Information and communication,Other,0.013,Industry
+Information and communication,Not sure,0.205,Industry
+Information and communication,Not applicable,0.02,Industry
+"Professional, scientific and technical activities",Developed in-house,0.217,Industry
+"Professional, scientific and technical activities",Outsourced to external providers or third parties,0.142,Industry
+"Professional, scientific and technical activities",Through purchase of external software or ready-to-use,0.544,Industry
+"Professional, scientific and technical activities",Other,0.048,Industry
+"Professional, scientific and technical activities",Not sure,0.12,Industry
+"Professional, scientific and technical activities",Not applicable,0.092,Industry
+Administrative and support service activities,Developed in-house,0.217,Industry
+Administrative and support service activities,Outsourced to external providers or third parties,0.067,Industry
+Administrative and support service activities,Through purchase of external software or ready-to-use,0.283,Industry
+Administrative and support service activities,Not sure,0.351,Industry
+Administrative and support service activities,Not applicable,0.148,Industry
+Other service activities,Developed in-house,0.155,Industry
+Other service activities,Outsourced to external providers or third parties,0.079,Industry
+Other service activities,Through purchase of external software or ready-to-use,0.428,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.285,Industry
+Other service activities,Not applicable,0.129,Industry
+0 - 9,Developed in-house,0.175,Micro (0-9)
+0 - 9,Outsourced to external providers or third parties,0.115,Micro (0-9)
+0 - 9,Through purchase of external software or ready-to-use,0.391,Micro (0-9)
+0 - 9,Other,0.027,Micro (0-9)
+0 - 9,Not sure,0.235,Micro (0-9)
+0 - 9,Not applicable,0.148,Micro (0-9)
+10 - 49,Developed in-house,0.177,Small (10-49)
+10 - 49,Outsourced to external providers or third parties,0.165,Small (10-49)
+10 - 49,Through purchase of external software or ready-to-use,0.324,Small (10-49)
+10 - 49,Other,0.023,Small (10-49)
+10 - 49,Not sure,0.327,Small (10-49)
+10 - 49,Not applicable,0.114,Small (10-49)
+50 - 99,Developed in-house,0.188,Micro (0-9)
+50 - 99,Outsourced to external providers or third parties,0.157,Micro (0-9)
+50 - 99,Through purchase of external software or ready-to-use,0.33,Micro (0-9)
+50 - 99,Not sure,0.347,Micro (0-9)
+50 - 99,Not applicable,0.121,Micro (0-9)
+100 - 249,Developed in-house,0.181,Medium (50-249)
+100 - 249,Outsourced to external providers or third parties,0.141,Medium (50-249)
+100 - 249,Through purchase of external software or ready-to-use,0.262,Medium (50-249)
+100 - 249,Not sure,0.442,Medium (50-249)
+100 - 249,Not applicable,0.103,Medium (50-249)
+250 +,Developed in-house,0.166,Large (250+)
+250 +,Outsourced to external providers or third parties,0.17,Large (250+)
+250 +,Through purchase of external software or ready-to-use,0.218,Large (250+)
+250 +,Not sure,0.52,Large (250+)
+250 +,Not applicable,0.082,Large (250+)
+All size bands excluding 0 - 9,Developed in-house,0.178,Micro (0-9)
+All size bands excluding 0 - 9,Outsourced to external providers or third parties,0.162,Micro (0-9)
+All size bands excluding 0 - 9,Through purchase of external software or ready-to-use,0.318,Micro (0-9)
+All size bands excluding 0 - 9,Other,0.019,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.341,Micro (0-9)
+All size bands excluding 0 - 9,Not applicable,0.113,Micro (0-9)
+All businesses,Developed in-house,0.175,All businesses
+All businesses,Outsourced to external providers or third parties,0.121,All businesses
+All businesses,Through purchase of external software or ready-to-use,0.382,All businesses
+All businesses,Other,0.026,All businesses
+All businesses,Not sure,0.249,All businesses
+All businesses,Not applicable,0.144,All businesses
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Developed in-house,0.116,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Outsourced to external providers or third parties,0.145,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Through purchase of external software or ready-to-use,0.385,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.041,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.346,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not applicable,0.1,Industry
+Information and communication,Developed in-house,0.349,Industry
+Information and communication,Outsourced to external providers or third parties,0.186,Industry
+Information and communication,Through purchase of external software or ready-to-use,0.321,Industry
+Information and communication,Other,0.021,Industry
+Information and communication,Not sure,0.303,Industry
+Information and communication,Not applicable,0.022,Industry
+"Professional, scientific and technical activities",Developed in-house,0.186,Industry
+"Professional, scientific and technical activities",Outsourced to external providers or third parties,0.125,Industry
+"Professional, scientific and technical activities",Through purchase of external software or ready-to-use,0.525,Industry
+"Professional, scientific and technical activities",Other,0.108,Industry
+"Professional, scientific and technical activities",Not sure,0.183,Industry
+"Professional, scientific and technical activities",Not applicable,0.033,Industry
+Administrative and support service activities,Developed in-house,0.097,Industry
+Administrative and support service activities,Outsourced to external providers or third parties,0.172,Industry
+Administrative and support service activities,Through purchase of external software or ready-to-use,0.447,Industry
+Administrative and support service activities,Not sure,0.172,Industry
+Administrative and support service activities,Not applicable,0.124,Industry
+0 - 9,Developed in-house,0.159,Micro (0-9)
+0 - 9,Outsourced to external providers or third parties,0.116,Micro (0-9)
+0 - 9,Through purchase of external software or ready-to-use,0.429,Micro (0-9)
+0 - 9,Other,0.077,Micro (0-9)
+0 - 9,Not sure,0.283,Micro (0-9)
+0 - 9,Not applicable,0.051,Micro (0-9)
+10 - 49,Developed in-house,0.179,Small (10-49)
+10 - 49,Outsourced to external providers or third parties,0.13,Small (10-49)
+10 - 49,Through purchase of external software or ready-to-use,0.342,Small (10-49)
+10 - 49,Other,0.012,Small (10-49)
+10 - 49,Not sure,0.38,Small (10-49)
+10 - 49,Not applicable,0.053,Small (10-49)
+50 - 99,Developed in-house,0.2,Micro (0-9)
+50 - 99,Outsourced to external providers or third parties,0.167,Micro (0-9)
+50 - 99,Through purchase of external software or ready-to-use,0.343,Micro (0-9)
+50 - 99,Other,0.014,Micro (0-9)
+50 - 99,Not sure,0.382,Micro (0-9)
+50 - 99,Not applicable,0.044,Micro (0-9)
+100 - 249,Developed in-house,0.165,Medium (50-249)
+100 - 249,Outsourced to external providers or third parties,0.17,Medium (50-249)
+100 - 249,Through purchase of external software or ready-to-use,0.274,Medium (50-249)
+100 - 249,Other,0.023,Medium (50-249)
+100 - 249,Not sure,0.465,Medium (50-249)
+100 - 249,Not applicable,0.044,Medium (50-249)
+250 +,Developed in-house,0.15,Large (250+)
+250 +,Outsourced to external providers or third parties,0.15,Large (250+)
+250 +,Through purchase of external software or ready-to-use,0.237,Large (250+)
+250 +,Other,0.01,Large (250+)
+250 +,Not sure,0.552,Large (250+)
+250 +,Not applicable,0.03,Large (250+)
+All size bands excluding 0 - 9,Developed in-house,0.177,Micro (0-9)
+All size bands excluding 0 - 9,Outsourced to external providers or third parties,0.14,Micro (0-9)
+All size bands excluding 0 - 9,Through purchase of external software or ready-to-use,0.325,Micro (0-9)
+All size bands excluding 0 - 9,Other,0.013,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.406,Micro (0-9)
+All size bands excluding 0 - 9,Not applicable,0.049,Micro (0-9)
+All businesses,Developed in-house,0.162,All businesses
+All businesses,Outsourced to external providers or third parties,0.12,All businesses
+All businesses,Through purchase of external software or ready-to-use,0.412,All businesses
+All businesses,Other,0.066,All businesses
+All businesses,Not sure,0.303,All businesses
+All businesses,Not applicable,0.051,All businesses
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Developed in-house,0.092,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Outsourced to external providers or third parties,0.205,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Through purchase of external software or ready-to-use,0.289,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.077,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.38,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not applicable,0.048,Industry
+Information and communication,Developed in-house,0.29,Industry
+Information and communication,Outsourced to external providers or third parties,0.142,Industry
+Information and communication,Through purchase of external software or ready-to-use,0.546,Industry
+Information and communication,Other,0.0,Industry
+Information and communication,Not sure,0.264,Industry
+Information and communication,Not applicable,0.02,Industry
+"Professional, scientific and technical activities",Developed in-house,0.193,Industry
+"Professional, scientific and technical activities",Outsourced to external providers or third parties,0.103,Industry
+"Professional, scientific and technical activities",Through purchase of external software or ready-to-use,0.491,Industry
+"Professional, scientific and technical activities",Other,0.094,Industry
+"Professional, scientific and technical activities",Not sure,0.257,Industry
+"Professional, scientific and technical activities",Not applicable,0.043,Industry
+Administrative and support service activities,Developed in-house,0.093,Industry
+Administrative and support service activities,Outsourced to external providers or third parties,0.347,Industry
+Administrative and support service activities,Through purchase of external software or ready-to-use,0.15,Industry
+Administrative and support service activities,Not sure,0.419,Industry
+Administrative and support service activities,Not applicable,0.084,Industry
+0 - 9,Developed in-house,0.168,Micro (0-9)
+0 - 9,Outsourced to external providers or third parties,0.132,Micro (0-9)
+0 - 9,Through purchase of external software or ready-to-use,0.381,Micro (0-9)
+0 - 9,Other,0.05,Micro (0-9)
+0 - 9,Not sure,0.359,Micro (0-9)
+0 - 9,Not applicable,0.044,Micro (0-9)
+10 - 49,Developed in-house,0.161,Small (10-49)
+10 - 49,Outsourced to external providers or third parties,0.133,Small (10-49)
+10 - 49,Through purchase of external software or ready-to-use,0.342,Small (10-49)
+10 - 49,Other,0.022,Small (10-49)
+10 - 49,Not sure,0.39,Small (10-49)
+10 - 49,Not applicable,0.057,Small (10-49)
+50 - 99,Developed in-house,0.194,Micro (0-9)
+50 - 99,Outsourced to external providers or third parties,0.156,Micro (0-9)
+50 - 99,Through purchase of external software or ready-to-use,0.282,Micro (0-9)
+50 - 99,Other,0.017,Micro (0-9)
+50 - 99,Not sure,0.425,Micro (0-9)
+50 - 99,Not applicable,0.051,Micro (0-9)
+100 - 249,Developed in-house,0.152,Medium (50-249)
+100 - 249,Outsourced to external providers or third parties,0.151,Medium (50-249)
+100 - 249,Through purchase of external software or ready-to-use,0.276,Medium (50-249)
+100 - 249,Not sure,0.488,Medium (50-249)
+100 - 249,Not applicable,0.054,Medium (50-249)
+250 +,Developed in-house,0.157,Large (250+)
+250 +,Outsourced to external providers or third parties,0.151,Large (250+)
+250 +,Through purchase of external software or ready-to-use,0.207,Large (250+)
+250 +,Other,0.011,Large (250+)
+250 +,Not sure,0.568,Large (250+)
+250 +,Not applicable,0.034,Large (250+)
+All size bands excluding 0 - 9,Developed in-house,0.164,Micro (0-9)
+All size bands excluding 0 - 9,Outsourced to external providers or third parties,0.139,Micro (0-9)
+All size bands excluding 0 - 9,Through purchase of external software or ready-to-use,0.317,Micro (0-9)
+All size bands excluding 0 - 9,Other,0.02,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.418,Micro (0-9)
+All size bands excluding 0 - 9,Not applicable,0.054,Micro (0-9)
+All businesses,Developed in-house,0.167,All businesses
+All businesses,Outsourced to external providers or third parties,0.133,All businesses
+All businesses,Through purchase of external software or ready-to-use,0.371,All businesses
+All businesses,Other,0.045,All businesses
+All businesses,Not sure,0.369,All businesses
+All businesses,Not applicable,0.046,All businesses

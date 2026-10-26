@@ -1,0 +1,46 @@
+{
+  "data_source": "ONS BICS Wave 165 (21 September\u20134 October 2026)",
+  "licence": "Open Government Licence v3.0",
+  "extraction_method": "Direct extraction of published weighted estimates",
+  "note": "No pseudo-replication - single wave estimates only",
+  "key_findings": {
+    "by_size": {
+      "Micro (0-9)": 0.34299999999999997,
+      "Small (10-49)": 0.46099999999999997,
+      "Medium (50-99)": 0.607,
+      "Medium (100-249)": 0.6679999999999999,
+      "Large (250+)": 0.749,
+      "All businesses": 0.359
+    },
+    "trend": [
+      {
+        "wave": 105,
+        "date": "April 2024",
+        "adoption_rate": 0.247
+      },
+      {
+        "wave": 117,
+        "date": "Oct 2024",
+        "adoption_rate": 0.268
+      },
+      {
+        "wave": 165,
+        "date": "Sept 2026",
+        "adoption_rate": 0.359
+      }
+    ],
+    "top_barriers": {
+      "Level of expertise in artificial intelligence": 0.093,
+      "Lack of trust in artificial intelligence technology product safety or transparency ": 0.092,
+      "Cost": 0.077,
+      "Security concerns": 0.068,
+      "Difficulty identifying business use cases": 0.062
+    },
+    "top_purposes": {
+      "Improve business operations": 0.611,
+      "Provide, or personalise, products or services to customers": 0.31,
+      "Develop a new product or service": 0.231,
+      "Explore a new market": 0.155
+    }
+  }
+}

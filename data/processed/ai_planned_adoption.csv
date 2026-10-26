@@ -1,0 +1,402 @@
+category,technology,planned_rate,size_band
+Manufacturing,Autonomous vehicles,0.0,Industry
+Manufacturing,Data processing using machine learning,0.017,Industry
+Manufacturing,Image processing using machine learning,0.022,Industry
+Manufacturing,Text generation using Large Language Models,0.022,Industry
+Manufacturing,Visual content creation,0.031,Industry
+Manufacturing,Not sure,0.044,Industry
+Manufacturing,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.884,Industry
+Construction,Autonomous vehicles,0.0,Industry
+Construction,Data processing using machine learning,0.0,Industry
+Construction,Image processing using machine learning,0.0,Industry
+Construction,Robotics,0.0,Industry
+Construction,Text generation using Large Language Models,0.0,Industry
+Construction,Visual content creation,0.022,Industry
+Construction,Other,0.0,Industry
+Construction,Not sure,0.076,Industry
+Construction,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.901,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Autonomous vehicles,0.0,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Text generation using Large Language Models,0.027,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Visual content creation,0.036,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.0,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.112,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.835,Industry
+Transportation and storage,Autonomous vehicles,0.0,Industry
+Transportation and storage,Data processing using machine learning,0.0,Industry
+Transportation and storage,Robotics,0.0,Industry
+Transportation and storage,Text generation using Large Language Models,0.01,Industry
+Transportation and storage,Other,0.0,Industry
+Transportation and storage,Not sure,0.063,Industry
+Transportation and storage,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.917,Industry
+Accommodation and food service activities,Autonomous vehicles,0.013,Industry
+Accommodation and food service activities,Robotics,0.014,Industry
+Accommodation and food service activities,Text generation using Large Language Models,0.018,Industry
+Accommodation and food service activities,Visual content creation,0.019,Industry
+Accommodation and food service activities,Other,0.0,Industry
+Accommodation and food service activities,Not sure,0.112,Industry
+Accommodation and food service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.837,Industry
+Information and communication,Autonomous vehicles,0.018,Industry
+Information and communication,Data processing using machine learning,0.146,Industry
+Information and communication,Image processing using machine learning,0.094,Industry
+Information and communication,Robotics,0.012,Industry
+Information and communication,Text generation using Large Language Models,0.178,Industry
+Information and communication,Visual content creation,0.121,Industry
+Information and communication,Not sure,0.203,Industry
+Information and communication,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.506,Industry
+Real estate activities,Autonomous vehicles,0.0,Industry
+Real estate activities,Data processing using machine learning,0.0,Industry
+Real estate activities,Image processing using machine learning,0.0,Industry
+Real estate activities,Robotics,0.0,Industry
+Real estate activities,Text generation using Large Language Models,0.08,Industry
+Real estate activities,Visual content creation,0.04,Industry
+Real estate activities,Other,0.0,Industry
+Real estate activities,Not sure,0.124,Industry
+Real estate activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.756,Industry
+"Professional, scientific and technical activities",Autonomous vehicles,0.0,Industry
+"Professional, scientific and technical activities",Data processing using machine learning,0.05,Industry
+"Professional, scientific and technical activities",Image processing using machine learning,0.026,Industry
+"Professional, scientific and technical activities",Text generation using Large Language Models,0.09,Industry
+"Professional, scientific and technical activities",Visual content creation,0.067,Industry
+"Professional, scientific and technical activities",Not sure,0.089,Industry
+"Professional, scientific and technical activities",Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.751,Industry
+Administrative and support service activities,Autonomous vehicles,0.0,Industry
+Administrative and support service activities,Data processing using machine learning,0.03,Industry
+Administrative and support service activities,Image processing using machine learning,0.02,Industry
+Administrative and support service activities,Robotics,0.0,Industry
+Administrative and support service activities,Text generation using Large Language Models,0.061,Industry
+Administrative and support service activities,Visual content creation,0.026,Industry
+Administrative and support service activities,Other,0.029,Industry
+Administrative and support service activities,Not sure,0.118,Industry
+Administrative and support service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.772,Industry
+Education,Autonomous vehicles,0.0,Industry
+Education,Image processing using machine learning,0.0,Industry
+Education,Robotics,0.0,Industry
+Education,Visual content creation,0.013,Industry
+Education,Other,0.057,Industry
+Education,Not sure,0.198,Industry
+Education,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.728,Industry
+"Arts, entertainment and recreation",Autonomous vehicles,0.0,Industry
+"Arts, entertainment and recreation",Image processing using machine learning,0.0,Industry
+"Arts, entertainment and recreation",Robotics,0.0,Industry
+"Arts, entertainment and recreation",Text generation using Large Language Models,0.028,Industry
+"Arts, entertainment and recreation",Visual content creation,0.024,Industry
+"Arts, entertainment and recreation",Other,0.0,Industry
+"Arts, entertainment and recreation",Not sure,0.036,Industry
+"Arts, entertainment and recreation",Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.934,Industry
+Other service activities,Autonomous vehicles,0.0,Industry
+Other service activities,Data processing using machine learning,0.126,Industry
+Other service activities,Image processing using machine learning,0.078,Industry
+Other service activities,Robotics,0.0,Industry
+Other service activities,Text generation using Large Language Models,0.077,Industry
+Other service activities,Visual content creation,0.059,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.227,Industry
+Other service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.588,Industry
+0 - 9,Data processing using machine learning,0.033,Micro (0-9)
+0 - 9,Image processing using machine learning,0.022,Micro (0-9)
+0 - 9,Text generation using Large Language Models,0.054,Micro (0-9)
+0 - 9,Visual content creation,0.045,Micro (0-9)
+0 - 9,Not sure,0.101,Micro (0-9)
+0 - 9,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.8,Micro (0-9)
+10 - 49,Data processing using machine learning,0.033,Small (10-49)
+10 - 49,Image processing using machine learning,0.013,Small (10-49)
+10 - 49,Text generation using Large Language Models,0.037,Small (10-49)
+10 - 49,Visual content creation,0.038,Small (10-49)
+10 - 49,Not sure,0.144,Small (10-49)
+10 - 49,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.77,Small (10-49)
+50 - 99,Data processing using machine learning,0.056,Micro (0-9)
+50 - 99,Image processing using machine learning,0.015,Micro (0-9)
+50 - 99,Text generation using Large Language Models,0.05,Micro (0-9)
+50 - 99,Visual content creation,0.038,Micro (0-9)
+50 - 99,Not sure,0.218,Micro (0-9)
+50 - 99,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.666,Micro (0-9)
+100 - 249,Data processing using machine learning,0.044,Medium (50-249)
+100 - 249,Image processing using machine learning,0.019,Medium (50-249)
+100 - 249,Robotics,0.014,Medium (50-249)
+100 - 249,Text generation using Large Language Models,0.035,Medium (50-249)
+100 - 249,Visual content creation,0.026,Medium (50-249)
+100 - 249,Not sure,0.307,Medium (50-249)
+100 - 249,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.596,Medium (50-249)
+250 +,Data processing using machine learning,0.062,Large (250+)
+250 +,Image processing using machine learning,0.027,Large (250+)
+250 +,Robotics,0.025,Large (250+)
+250 +,Text generation using Large Language Models,0.036,Large (250+)
+250 +,Visual content creation,0.023,Large (250+)
+250 +,Not sure,0.423,Large (250+)
+250 +,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.472,Large (250+)
+All size bands excluding 0 - 9,Data processing using machine learning,0.036,Micro (0-9)
+All size bands excluding 0 - 9,Image processing using machine learning,0.014,Micro (0-9)
+All size bands excluding 0 - 9,Text generation using Large Language Models,0.038,Micro (0-9)
+All size bands excluding 0 - 9,Visual content creation,0.038,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.161,Micro (0-9)
+All size bands excluding 0 - 9,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.749,Micro (0-9)
+All businesses,Data processing using machine learning,0.034,All businesses
+All businesses,Image processing using machine learning,0.021,All businesses
+All businesses,Text generation using Large Language Models,0.052,All businesses
+All businesses,Visual content creation,0.044,All businesses
+All businesses,Not sure,0.108,All businesses
+All businesses,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.794,All businesses
+Manufacturing,Autonomous vehicles,0.0,Industry
+Manufacturing,Not sure,0.101,Industry
+Manufacturing,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.887,Industry
+Construction,Autonomous vehicles,0.0,Industry
+Construction,Image processing using machine learning,0.0,Industry
+Construction,Robotics,0.0,Industry
+Construction,Other,0.0,Industry
+Construction,Not sure,0.032,Industry
+Construction,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.951,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Data processing using machine learning,0.018,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Image processing using machine learning,0.015,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Text generation using Large Language Models,0.026,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Visual content creation,0.04,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.0,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.092,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.85,Industry
+Transportation and storage,Autonomous vehicles,0.014,Industry
+Transportation and storage,Data processing using machine learning,0.015,Industry
+Transportation and storage,Image processing using machine learning,0.0,Industry
+Transportation and storage,Robotics,0.0,Industry
+Transportation and storage,Other,0.0,Industry
+Transportation and storage,Not sure,0.027,Industry
+Transportation and storage,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.942,Industry
+Accommodation and food service activities,Autonomous vehicles,0.0,Industry
+Accommodation and food service activities,Robotics,0.0,Industry
+Accommodation and food service activities,Other,0.0,Industry
+Accommodation and food service activities,Not sure,0.041,Industry
+Accommodation and food service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.945,Industry
+Information and communication,Autonomous vehicles,0.0,Industry
+Information and communication,Data processing using machine learning,0.084,Industry
+Information and communication,Image processing using machine learning,0.049,Industry
+Information and communication,Text generation using Large Language Models,0.13,Industry
+Information and communication,Visual content creation,0.062,Industry
+Information and communication,Not sure,0.202,Industry
+Information and communication,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.605,Industry
+Real estate activities,Autonomous vehicles,0.0,Industry
+Real estate activities,Data processing using machine learning,0.0,Industry
+Real estate activities,Image processing using machine learning,0.0,Industry
+Real estate activities,Robotics,0.0,Industry
+Real estate activities,Not sure,0.102,Industry
+Real estate activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.89,Industry
+"Professional, scientific and technical activities",Data processing using machine learning,0.045,Industry
+"Professional, scientific and technical activities",Image processing using machine learning,0.02,Industry
+"Professional, scientific and technical activities",Robotics,0.0,Industry
+"Professional, scientific and technical activities",Text generation using Large Language Models,0.083,Industry
+"Professional, scientific and technical activities",Visual content creation,0.059,Industry
+"Professional, scientific and technical activities",Not sure,0.113,Industry
+"Professional, scientific and technical activities",Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.746,Industry
+Administrative and support service activities,Autonomous vehicles,0.0,Industry
+Administrative and support service activities,Text generation using Large Language Models,0.031,Industry
+Administrative and support service activities,Visual content creation,0.028,Industry
+Administrative and support service activities,Other,0.01,Industry
+Administrative and support service activities,Not sure,0.088,Industry
+Administrative and support service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.855,Industry
+Education,Autonomous vehicles,0.0,Industry
+Education,Image processing using machine learning,0.0,Industry
+Education,Robotics,0.0,Industry
+Education,Text generation using Large Language Models,0.143,Industry
+Education,Visual content creation,0.194,Industry
+Education,Other,0.0,Industry
+Education,Not sure,0.069,Industry
+Education,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.641,Industry
+Human health and social work activities,Autonomous vehicles,0.0,Industry
+Human health and social work activities,Text generation using Large Language Models,0.011,Industry
+Human health and social work activities,Visual content creation,0.0,Industry
+Human health and social work activities,Other,0.0,Industry
+Human health and social work activities,Not sure,0.16,Industry
+Human health and social work activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.826,Industry
+"Arts, entertainment and recreation",Autonomous vehicles,0.0,Industry
+"Arts, entertainment and recreation",Image processing using machine learning,0.0,Industry
+"Arts, entertainment and recreation",Robotics,0.0,Industry
+"Arts, entertainment and recreation",Text generation using Large Language Models,0.034,Industry
+"Arts, entertainment and recreation",Visual content creation,0.026,Industry
+"Arts, entertainment and recreation",Not sure,0.265,Industry
+"Arts, entertainment and recreation",Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.674,Industry
+Other service activities,Autonomous vehicles,0.0,Industry
+Other service activities,Data processing using machine learning,0.029,Industry
+Other service activities,Image processing using machine learning,0.028,Industry
+Other service activities,Robotics,0.0,Industry
+Other service activities,Text generation using Large Language Models,0.057,Industry
+Other service activities,Visual content creation,0.033,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.115,Industry
+Other service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.823,Industry
+0 - 9,Data processing using machine learning,0.02,Micro (0-9)
+0 - 9,Image processing using machine learning,0.012,Micro (0-9)
+0 - 9,Text generation using Large Language Models,0.041,Micro (0-9)
+0 - 9,Visual content creation,0.033,Micro (0-9)
+0 - 9,Not sure,0.086,Micro (0-9)
+0 - 9,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.843,Micro (0-9)
+10 - 49,Autonomous vehicles,0.0,Small (10-49)
+10 - 49,Data processing using machine learning,0.033,Small (10-49)
+10 - 49,Image processing using machine learning,0.011,Small (10-49)
+10 - 49,Text generation using Large Language Models,0.044,Small (10-49)
+10 - 49,Visual content creation,0.029,Small (10-49)
+10 - 49,Not sure,0.169,Small (10-49)
+10 - 49,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.751,Small (10-49)
+50 - 99,Data processing using machine learning,0.046,Micro (0-9)
+50 - 99,Image processing using machine learning,0.018,Micro (0-9)
+50 - 99,Text generation using Large Language Models,0.051,Micro (0-9)
+50 - 99,Visual content creation,0.033,Micro (0-9)
+50 - 99,Not sure,0.236,Micro (0-9)
+50 - 99,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.663,Micro (0-9)
+100 - 249,Data processing using machine learning,0.032,Medium (50-249)
+100 - 249,Image processing using machine learning,0.015,Medium (50-249)
+100 - 249,Robotics,0.011,Medium (50-249)
+100 - 249,Text generation using Large Language Models,0.031,Medium (50-249)
+100 - 249,Visual content creation,0.024,Medium (50-249)
+100 - 249,Not sure,0.313,Medium (50-249)
+100 - 249,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.606,Medium (50-249)
+250 +,Data processing using machine learning,0.051,Large (250+)
+250 +,Image processing using machine learning,0.026,Large (250+)
+250 +,Robotics,0.014,Large (250+)
+250 +,Text generation using Large Language Models,0.033,Large (250+)
+250 +,Visual content creation,0.023,Large (250+)
+250 +,Not sure,0.45,Large (250+)
+250 +,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.457,Large (250+)
+All size bands excluding 0 - 9,Data processing using machine learning,0.035,Micro (0-9)
+All size bands excluding 0 - 9,Image processing using machine learning,0.012,Micro (0-9)
+All size bands excluding 0 - 9,Text generation using Large Language Models,0.044,Micro (0-9)
+All size bands excluding 0 - 9,Visual content creation,0.029,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.19,Micro (0-9)
+All size bands excluding 0 - 9,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.727,Micro (0-9)
+All businesses,Data processing using machine learning,0.022,All businesses
+All businesses,Image processing using machine learning,0.012,All businesses
+All businesses,Text generation using Large Language Models,0.042,All businesses
+All businesses,Visual content creation,0.033,All businesses
+All businesses,Not sure,0.097,All businesses
+All businesses,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.83,All businesses
+Manufacturing,Image processing using machine learning,0.021,Industry
+Manufacturing,Text generation using Large Language Models,0.031,Industry
+Manufacturing,Visual content creation,0.04,Industry
+Manufacturing,Not sure,0.12,Industry
+Manufacturing,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.795,Industry
+Construction,Autonomous vehicles,0.0,Industry
+Construction,Image processing using machine learning,0.0,Industry
+Construction,Robotics,0.0,Industry
+Construction,Visual content creation,0.01,Industry
+Construction,Other,0.0,Industry
+Construction,Not sure,0.082,Industry
+Construction,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.902,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Autonomous vehicles,0.0,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Data processing using machine learning,0.021,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Image processing using machine learning,0.014,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Text generation using Large Language Models,0.038,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Visual content creation,0.042,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.0,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.095,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.832,Industry
+Transportation and storage,Autonomous vehicles,0.0,Industry
+Transportation and storage,Robotics,0.0,Industry
+Transportation and storage,Other,0.0,Industry
+Transportation and storage,Not sure,0.11,Industry
+Transportation and storage,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.885,Industry
+Accommodation and food service activities,Autonomous vehicles,0.0,Industry
+Accommodation and food service activities,Data processing using machine learning,0.015,Industry
+Accommodation and food service activities,Robotics,0.013,Industry
+Accommodation and food service activities,Other,0.0,Industry
+Accommodation and food service activities,Not sure,0.052,Industry
+Accommodation and food service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.908,Industry
+Information and communication,Data processing using machine learning,0.075,Industry
+Information and communication,Image processing using machine learning,0.052,Industry
+Information and communication,Robotics,0.01,Industry
+Information and communication,Text generation using Large Language Models,0.148,Industry
+Information and communication,Visual content creation,0.089,Industry
+Information and communication,Other,0.015,Industry
+Information and communication,Not sure,0.218,Industry
+Information and communication,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.567,Industry
+Real estate activities,Autonomous vehicles,0.0,Industry
+Real estate activities,Data processing using machine learning,0.0,Industry
+Real estate activities,Robotics,0.0,Industry
+Real estate activities,Text generation using Large Language Models,0.048,Industry
+Real estate activities,Other,0.04,Industry
+Real estate activities,Not sure,0.133,Industry
+Real estate activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.777,Industry
+"Professional, scientific and technical activities",Data processing using machine learning,0.03,Industry
+"Professional, scientific and technical activities",Image processing using machine learning,0.012,Industry
+"Professional, scientific and technical activities",Text generation using Large Language Models,0.071,Industry
+"Professional, scientific and technical activities",Visual content creation,0.049,Industry
+"Professional, scientific and technical activities",Other,0.011,Industry
+"Professional, scientific and technical activities",Not sure,0.108,Industry
+"Professional, scientific and technical activities",Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.77,Industry
+Administrative and support service activities,Autonomous vehicles,0.0,Industry
+Administrative and support service activities,Data processing using machine learning,0.024,Industry
+Administrative and support service activities,Text generation using Large Language Models,0.037,Industry
+Administrative and support service activities,Visual content creation,0.029,Industry
+Administrative and support service activities,Other,0.0,Industry
+Administrative and support service activities,Not sure,0.095,Industry
+Administrative and support service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.852,Industry
+Education,Autonomous vehicles,0.0,Industry
+Education,Data processing using machine learning,0.049,Industry
+Education,Image processing using machine learning,0.049,Industry
+Education,Robotics,0.0,Industry
+Education,Text generation using Large Language Models,0.233,Industry
+Education,Visual content creation,0.191,Industry
+Education,Other,0.0,Industry
+Education,Not sure,0.116,Industry
+Education,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.597,Industry
+Human health and social work activities,Autonomous vehicles,0.0,Industry
+Human health and social work activities,Image processing using machine learning,0.0,Industry
+Human health and social work activities,Robotics,0.0,Industry
+Human health and social work activities,Other,0.0,Industry
+Human health and social work activities,Not sure,0.09,Industry
+Human health and social work activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.9,Industry
+"Arts, entertainment and recreation",Autonomous vehicles,0.0,Industry
+"Arts, entertainment and recreation",Image processing using machine learning,0.0,Industry
+"Arts, entertainment and recreation",Robotics,0.0,Industry
+"Arts, entertainment and recreation",Text generation using Large Language Models,0.05,Industry
+"Arts, entertainment and recreation",Visual content creation,0.054,Industry
+"Arts, entertainment and recreation",Other,0.0,Industry
+"Arts, entertainment and recreation",Not sure,0.205,Industry
+"Arts, entertainment and recreation",Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.717,Industry
+Other service activities,Autonomous vehicles,0.0,Industry
+Other service activities,Data processing using machine learning,0.078,Industry
+Other service activities,Image processing using machine learning,0.0,Industry
+Other service activities,Text generation using Large Language Models,0.078,Industry
+Other service activities,Visual content creation,0.0,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.084,Industry
+Other service activities,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.837,Industry
+0 - 9,Data processing using machine learning,0.021,Micro (0-9)
+0 - 9,Image processing using machine learning,0.012,Micro (0-9)
+0 - 9,Text generation using Large Language Models,0.049,Micro (0-9)
+0 - 9,Visual content creation,0.037,Micro (0-9)
+0 - 9,Not sure,0.099,Micro (0-9)
+0 - 9,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.82,Micro (0-9)
+10 - 49,Data processing using machine learning,0.029,Small (10-49)
+10 - 49,Image processing using machine learning,0.012,Small (10-49)
+10 - 49,Text generation using Large Language Models,0.037,Small (10-49)
+10 - 49,Visual content creation,0.03,Small (10-49)
+10 - 49,Not sure,0.163,Small (10-49)
+10 - 49,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.76,Small (10-49)
+50 - 99,Data processing using machine learning,0.04,Micro (0-9)
+50 - 99,Image processing using machine learning,0.02,Micro (0-9)
+50 - 99,Text generation using Large Language Models,0.041,Micro (0-9)
+50 - 99,Visual content creation,0.034,Micro (0-9)
+50 - 99,Not sure,0.243,Micro (0-9)
+50 - 99,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.665,Micro (0-9)
+100 - 249,Data processing using machine learning,0.029,Medium (50-249)
+100 - 249,Image processing using machine learning,0.018,Medium (50-249)
+100 - 249,Robotics,0.016,Medium (50-249)
+100 - 249,Text generation using Large Language Models,0.028,Medium (50-249)
+100 - 249,Visual content creation,0.022,Medium (50-249)
+100 - 249,Not sure,0.309,Medium (50-249)
+100 - 249,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.615,Medium (50-249)
+250 +,Data processing using machine learning,0.048,Large (250+)
+250 +,Image processing using machine learning,0.023,Large (250+)
+250 +,Robotics,0.022,Large (250+)
+250 +,Text generation using Large Language Models,0.028,Large (250+)
+250 +,Visual content creation,0.02,Large (250+)
+250 +,Not sure,0.438,Large (250+)
+250 +,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.469,Large (250+)
+All size bands excluding 0 - 9,Data processing using machine learning,0.031,Micro (0-9)
+All size bands excluding 0 - 9,Image processing using machine learning,0.013,Micro (0-9)
+All size bands excluding 0 - 9,Text generation using Large Language Models,0.036,Micro (0-9)
+All size bands excluding 0 - 9,Visual content creation,0.03,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.184,Micro (0-9)
+All size bands excluding 0 - 9,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.737,Micro (0-9)
+All businesses,Data processing using machine learning,0.022,All businesses
+All businesses,Image processing using machine learning,0.012,All businesses
+All businesses,Text generation using Large Language Models,0.048,All businesses
+All businesses,Visual content creation,0.036,All businesses
+All businesses,Not sure,0.109,All businesses
+All businesses,Business does not plan to adopt artificial intelligence technologies in the next 3 months,0.811,All businesses

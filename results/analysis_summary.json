@@ -1,0 +1,31 @@
+{
+  "data_source": "ONS BICS Wave 105 (18-31 March 2024)",
+  "licence": "Open Government Licence v3.0",
+  "key_findings": {
+    "by_size": {
+      "micro_mean": 0.1631896551724138,
+      "small_mean": 0.17272222222222222,
+      "medium_mean": 0.14677272727272728,
+      "large_mean": 0.15218181818181817
+    },
+    "size_correlation": {
+      "correlation": 0.09537999310940992,
+      "p_value": 0.30007902426916383,
+      "interpretation": "not significant"
+    },
+    "top_barriers": {
+      "Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies": 0.40311864406779657,
+      "Business has not attempted to use artificial intelligence technologies": 0.35600000000000004,
+      "Not sure": 0.11294915254237288,
+      "Level of expertise in artificial intelligence": 0.06814285714285714,
+      "Difficulty identifying business use cases": 0.06321428571428571
+    },
+    "top_purposes": {
+      "Improve business operations": 0.3564054054054054,
+      "Not sure": 0.34283783783783783,
+      "Provide, or personalise, products or services to customers": 0.19205555555555553,
+      "Develop a new product or service": 0.15542857142857144,
+      "Develop a new product or service, or explore a new market": 0.1406086956521739
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "current_use": {
+    "mean": 0.15659848484848482,
+    "median": 0.048,
+    "std": 0.27009259152686604,
+    "min": 0.0,
+    "max": 0.961,
+    "count": 396
+  },
+  "planned": {
+    "mean": null,
+    "median": null,
+    "std": null,
+    "min": null,
+    "max": null,
+    "count": 401
+  },
+  "data_extracted_from": "ONS BICS Wave 105 (March 2024)",
+  "licence": "Open Government Licence v3.0",
+  "source_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy"
+}
