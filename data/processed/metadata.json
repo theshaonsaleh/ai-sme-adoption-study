@@ -1,0 +1,10 @@
+{
+  "primary_wave": 165,
+  "primary_wave_date": "21 September 2026 to 4 October 2026",
+  "data_source": "ONS BICS Wave 165",
+  "licence": "Open Government Licence v3.0",
+  "extraction_method": "Direct extraction of published weighted estimates from named wave",
+  "base_all_businesses": "Adoption rates are % of all businesses",
+  "base_ai_adopters": "Purposes are % of businesses currently using AI",
+  "note": "No averaging across time points or mixed rows - single wave estimates only"
+}

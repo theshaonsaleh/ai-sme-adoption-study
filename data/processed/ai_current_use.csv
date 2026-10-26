@@ -1,0 +1,397 @@
+category,technology,adoption_rate,size_band
+Manufacturing,Autonomous vehicles,0.0,Industry
+Manufacturing,Image processing using machine learning,0.01,Industry
+Manufacturing,Text generation using Large Language Models,0.031,Industry
+Manufacturing,Visual content creation,0.059,Industry
+Manufacturing,Other,0.0,Industry
+Manufacturing,Not sure,0.064,Industry
+Manufacturing,Business is not currently using artificial intelligence technologies,0.837,Industry
+Construction,Autonomous vehicles,0.016,Industry
+Construction,Robotics,0.016,Industry
+Construction,Visual content creation,0.015,Industry
+Construction,Other,0.0,Industry
+Construction,Not sure,0.061,Industry
+Construction,Business is not currently using artificial intelligence technologies,0.901,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Data processing using machine learning,0.032,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Text generation using Large Language Models,0.035,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Visual content creation,0.031,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.014,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.089,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business is not currently using artificial intelligence technologies,0.818,Industry
+Transportation and storage,Autonomous vehicles,0.0,Industry
+Transportation and storage,Data processing using machine learning,0.016,Industry
+Transportation and storage,Robotics,0.014,Industry
+Transportation and storage,Text generation using Large Language Models,0.0,Industry
+Transportation and storage,Not sure,0.046,Industry
+Transportation and storage,Business is not currently using artificial intelligence technologies,0.913,Industry
+Accommodation and food service activities,Autonomous vehicles,0.014,Industry
+Accommodation and food service activities,Data processing using machine learning,0.02,Industry
+Accommodation and food service activities,Robotics,0.013,Industry
+Accommodation and food service activities,Visual content creation,0.021,Industry
+Accommodation and food service activities,Not sure,0.066,Industry
+Accommodation and food service activities,Business is not currently using artificial intelligence technologies,0.877,Industry
+Information and communication,Autonomous vehicles,0.012,Industry
+Information and communication,Data processing using machine learning,0.13,Industry
+Information and communication,Image processing using machine learning,0.091,Industry
+Information and communication,Robotics,0.0,Industry
+Information and communication,Text generation using Large Language Models,0.262,Industry
+Information and communication,Visual content creation,0.16,Industry
+Information and communication,Other,0.027,Industry
+Information and communication,Not sure,0.091,Industry
+Information and communication,Business is not currently using artificial intelligence technologies,0.54,Industry
+Real estate activities,Autonomous vehicles,0.0,Industry
+Real estate activities,Robotics,0.0,Industry
+Real estate activities,Text generation using Large Language Models,0.046,Industry
+Real estate activities,Visual content creation,0.04,Industry
+Real estate activities,Other,0.0,Industry
+Real estate activities,Not sure,0.08,Industry
+Real estate activities,Business is not currently using artificial intelligence technologies,0.833,Industry
+"Professional, scientific and technical activities",Autonomous vehicles,0.0,Industry
+"Professional, scientific and technical activities",Data processing using machine learning,0.076,Industry
+"Professional, scientific and technical activities",Image processing using machine learning,0.039,Industry
+"Professional, scientific and technical activities",Text generation using Large Language Models,0.148,Industry
+"Professional, scientific and technical activities",Visual content creation,0.084,Industry
+"Professional, scientific and technical activities",Other,0.028,Industry
+"Professional, scientific and technical activities",Not sure,0.048,Industry
+"Professional, scientific and technical activities",Business is not currently using artificial intelligence technologies,0.716,Industry
+Administrative and support service activities,Autonomous vehicles,0.0,Industry
+Administrative and support service activities,Data processing using machine learning,0.051,Industry
+Administrative and support service activities,Image processing using machine learning,0.034,Industry
+Administrative and support service activities,Robotics,0.0,Industry
+Administrative and support service activities,Text generation using Large Language Models,0.052,Industry
+Administrative and support service activities,Visual content creation,0.016,Industry
+Administrative and support service activities,Other,0.021,Industry
+Administrative and support service activities,Not sure,0.097,Industry
+Administrative and support service activities,Business is not currently using artificial intelligence technologies,0.785,Industry
+Education,Autonomous vehicles,0.0,Industry
+Education,Data processing using machine learning,0.061,Industry
+Education,Robotics,0.0,Industry
+Education,Text generation using Large Language Models,0.075,Industry
+Education,Visual content creation,0.121,Industry
+Education,Other,0.058,Industry
+Education,Not sure,0.017,Industry
+Education,Business is not currently using artificial intelligence technologies,0.68,Industry
+"Arts, entertainment and recreation",Autonomous vehicles,0.0,Industry
+"Arts, entertainment and recreation",Robotics,0.0,Industry
+"Arts, entertainment and recreation",Text generation using Large Language Models,0.059,Industry
+"Arts, entertainment and recreation",Other,0.022,Industry
+"Arts, entertainment and recreation",Business is not currently using artificial intelligence technologies,0.907,Industry
+Other service activities,Autonomous vehicles,0.0,Industry
+Other service activities,Data processing using machine learning,0.155,Industry
+Other service activities,Image processing using machine learning,0.078,Industry
+Other service activities,Text generation using Large Language Models,0.049,Industry
+Other service activities,Visual content creation,0.029,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.168,Industry
+Other service activities,Business is not currently using artificial intelligence technologies,0.619,Industry
+0 - 9,Data processing using machine learning,0.047,Micro (0-9)
+0 - 9,Image processing using machine learning,0.023,Micro (0-9)
+0 - 9,Text generation using Large Language Models,0.073,Micro (0-9)
+0 - 9,Visual content creation,0.05,Micro (0-9)
+0 - 9,Other,0.015,Micro (0-9)
+0 - 9,Not sure,0.067,Micro (0-9)
+0 - 9,Business is not currently using artificial intelligence technologies,0.794,Micro (0-9)
+10 - 49,Data processing using machine learning,0.056,Small (10-49)
+10 - 49,Image processing using machine learning,0.022,Small (10-49)
+10 - 49,Text generation using Large Language Models,0.055,Small (10-49)
+10 - 49,Visual content creation,0.047,Small (10-49)
+10 - 49,Not sure,0.099,Small (10-49)
+10 - 49,Business is not currently using artificial intelligence technologies,0.773,Small (10-49)
+50 - 99,Data processing using machine learning,0.084,Micro (0-9)
+50 - 99,Image processing using machine learning,0.033,Micro (0-9)
+50 - 99,Robotics,0.018,Micro (0-9)
+50 - 99,Text generation using Large Language Models,0.072,Micro (0-9)
+50 - 99,Visual content creation,0.062,Micro (0-9)
+50 - 99,Not sure,0.141,Micro (0-9)
+50 - 99,Business is not currently using artificial intelligence technologies,0.667,Micro (0-9)
+100 - 249,Data processing using machine learning,0.083,Medium (50-249)
+100 - 249,Image processing using machine learning,0.045,Medium (50-249)
+100 - 249,Robotics,0.027,Medium (50-249)
+100 - 249,Text generation using Large Language Models,0.066,Medium (50-249)
+100 - 249,Visual content creation,0.055,Medium (50-249)
+100 - 249,Not sure,0.192,Medium (50-249)
+100 - 249,Business is not currently using artificial intelligence technologies,0.624,Medium (50-249)
+250 +,Autonomous vehicles,0.01,Large (250+)
+250 +,Data processing using machine learning,0.135,Large (250+)
+250 +,Image processing using machine learning,0.062,Large (250+)
+250 +,Robotics,0.056,Large (250+)
+250 +,Text generation using Large Language Models,0.07,Large (250+)
+250 +,Visual content creation,0.049,Large (250+)
+250 +,Not sure,0.294,Large (250+)
+250 +,Business is not currently using artificial intelligence technologies,0.468,Large (250+)
+All size bands excluding 0 - 9,Data processing using machine learning,0.061,Micro (0-9)
+All size bands excluding 0 - 9,Image processing using machine learning,0.025,Micro (0-9)
+All size bands excluding 0 - 9,Text generation using Large Language Models,0.057,Micro (0-9)
+All size bands excluding 0 - 9,Visual content creation,0.049,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.109,Micro (0-9)
+All size bands excluding 0 - 9,Business is not currently using artificial intelligence technologies,0.753,Micro (0-9)
+All businesses,Data processing using machine learning,0.049,All businesses
+All businesses,Image processing using machine learning,0.023,All businesses
+All businesses,Text generation using Large Language Models,0.071,All businesses
+All businesses,Visual content creation,0.05,All businesses
+All businesses,Other,0.014,All businesses
+All businesses,Not sure,0.072,All businesses
+All businesses,Business is not currently using artificial intelligence technologies,0.79,All businesses
+Manufacturing,Autonomous vehicles,0.0,Industry
+Manufacturing,Robotics,0.017,Industry
+Manufacturing,Not sure,0.055,Industry
+Manufacturing,Business is not currently using artificial intelligence technologies,0.912,Industry
+Construction,Autonomous vehicles,0.0,Industry
+Construction,Robotics,0.0,Industry
+Construction,Text generation using Large Language Models,0.01,Industry
+Construction,Other,0.0,Industry
+Construction,Not sure,0.019,Industry
+Construction,Business is not currently using artificial intelligence technologies,0.961,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Data processing using machine learning,0.036,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Image processing using machine learning,0.01,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Text generation using Large Language Models,0.027,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Visual content creation,0.046,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.0,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.082,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business is not currently using artificial intelligence technologies,0.842,Industry
+Transportation and storage,Autonomous vehicles,0.014,Industry
+Transportation and storage,Robotics,0.0,Industry
+Transportation and storage,Other,0.015,Industry
+Transportation and storage,Not sure,0.035,Industry
+Transportation and storage,Business is not currently using artificial intelligence technologies,0.933,Industry
+Accommodation and food service activities,Autonomous vehicles,0.0,Industry
+Accommodation and food service activities,Robotics,0.0,Industry
+Accommodation and food service activities,Visual content creation,0.011,Industry
+Accommodation and food service activities,Not sure,0.027,Industry
+Accommodation and food service activities,Business is not currently using artificial intelligence technologies,0.954,Industry
+Information and communication,Data processing using machine learning,0.096,Industry
+Information and communication,Image processing using machine learning,0.081,Industry
+Information and communication,Text generation using Large Language Models,0.163,Industry
+Information and communication,Visual content creation,0.059,Industry
+Information and communication,Other,0.031,Industry
+Information and communication,Not sure,0.088,Industry
+Information and communication,Business is not currently using artificial intelligence technologies,0.656,Industry
+Real estate activities,Autonomous vehicles,0.0,Industry
+Real estate activities,Image processing using machine learning,0.0,Industry
+Real estate activities,Robotics,0.0,Industry
+Real estate activities,Text generation using Large Language Models,0.01,Industry
+Real estate activities,Other,0.0,Industry
+Real estate activities,Not sure,0.053,Industry
+Real estate activities,Business is not currently using artificial intelligence technologies,0.936,Industry
+"Professional, scientific and technical activities",Autonomous vehicles,0.0,Industry
+"Professional, scientific and technical activities",Data processing using machine learning,0.043,Industry
+"Professional, scientific and technical activities",Image processing using machine learning,0.032,Industry
+"Professional, scientific and technical activities",Text generation using Large Language Models,0.102,Industry
+"Professional, scientific and technical activities",Visual content creation,0.057,Industry
+"Professional, scientific and technical activities",Other,0.011,Industry
+"Professional, scientific and technical activities",Not sure,0.05,Industry
+"Professional, scientific and technical activities",Business is not currently using artificial intelligence technologies,0.789,Industry
+Administrative and support service activities,Autonomous vehicles,0.0,Industry
+Administrative and support service activities,Data processing using machine learning,0.018,Industry
+Administrative and support service activities,Robotics,0.0,Industry
+Administrative and support service activities,Text generation using Large Language Models,0.053,Industry
+Administrative and support service activities,Visual content creation,0.021,Industry
+Administrative and support service activities,Other,0.019,Industry
+Administrative and support service activities,Not sure,0.031,Industry
+Administrative and support service activities,Business is not currently using artificial intelligence technologies,0.865,Industry
+Education,Autonomous vehicles,0.0,Industry
+Education,Data processing using machine learning,0.051,Industry
+Education,Image processing using machine learning,0.052,Industry
+Education,Robotics,0.0,Industry
+Education,Text generation using Large Language Models,0.232,Industry
+Education,Visual content creation,0.183,Industry
+Education,Other,0.0,Industry
+Education,Not sure,0.066,Industry
+Education,Business is not currently using artificial intelligence technologies,0.558,Industry
+Human health and social work activities,Data processing using machine learning,0.01,Industry
+Human health and social work activities,Image processing using machine learning,0.0,Industry
+Human health and social work activities,Robotics,0.045,Industry
+Human health and social work activities,Text generation using Large Language Models,0.102,Industry
+Human health and social work activities,Visual content creation,0.048,Industry
+Human health and social work activities,Not sure,0.019,Industry
+Human health and social work activities,Business is not currently using artificial intelligence technologies,0.825,Industry
+"Arts, entertainment and recreation",Autonomous vehicles,0.0,Industry
+"Arts, entertainment and recreation",Image processing using machine learning,0.0,Industry
+"Arts, entertainment and recreation",Robotics,0.0,Industry
+"Arts, entertainment and recreation",Text generation using Large Language Models,0.035,Industry
+"Arts, entertainment and recreation",Visual content creation,0.057,Industry
+"Arts, entertainment and recreation",Not sure,0.231,Industry
+"Arts, entertainment and recreation",Business is not currently using artificial intelligence technologies,0.705,Industry
+Other service activities,Autonomous vehicles,0.0,Industry
+Other service activities,Data processing using machine learning,0.028,Industry
+Other service activities,Image processing using machine learning,0.028,Industry
+Other service activities,Robotics,0.0,Industry
+Other service activities,Text generation using Large Language Models,0.086,Industry
+Other service activities,Visual content creation,0.056,Industry
+Other service activities,Not sure,0.059,Industry
+Other service activities,Business is not currently using artificial intelligence technologies,0.826,Industry
+0 - 9,Data processing using machine learning,0.025,Micro (0-9)
+0 - 9,Image processing using machine learning,0.018,Micro (0-9)
+0 - 9,Text generation using Large Language Models,0.056,Micro (0-9)
+0 - 9,Visual content creation,0.035,Micro (0-9)
+0 - 9,Not sure,0.049,Micro (0-9)
+0 - 9,Business is not currently using artificial intelligence technologies,0.855,Micro (0-9)
+10 - 49,Data processing using machine learning,0.039,Small (10-49)
+10 - 49,Image processing using machine learning,0.018,Small (10-49)
+10 - 49,Text generation using Large Language Models,0.048,Small (10-49)
+10 - 49,Visual content creation,0.033,Small (10-49)
+10 - 49,Not sure,0.093,Small (10-49)
+10 - 49,Business is not currently using artificial intelligence technologies,0.798,Small (10-49)
+50 - 99,Data processing using machine learning,0.064,Micro (0-9)
+50 - 99,Image processing using machine learning,0.03,Micro (0-9)
+50 - 99,Robotics,0.013,Micro (0-9)
+50 - 99,Text generation using Large Language Models,0.069,Micro (0-9)
+50 - 99,Visual content creation,0.048,Micro (0-9)
+50 - 99,Not sure,0.112,Micro (0-9)
+50 - 99,Business is not currently using artificial intelligence technologies,0.732,Micro (0-9)
+100 - 249,Data processing using machine learning,0.074,Medium (50-249)
+100 - 249,Image processing using machine learning,0.034,Medium (50-249)
+100 - 249,Robotics,0.023,Medium (50-249)
+100 - 249,Text generation using Large Language Models,0.049,Medium (50-249)
+100 - 249,Visual content creation,0.043,Medium (50-249)
+100 - 249,Other,0.013,Medium (50-249)
+100 - 249,Not sure,0.166,Medium (50-249)
+100 - 249,Business is not currently using artificial intelligence technologies,0.677,Medium (50-249)
+250 +,Data processing using machine learning,0.097,Large (250+)
+250 +,Image processing using machine learning,0.043,Large (250+)
+250 +,Robotics,0.051,Large (250+)
+250 +,Text generation using Large Language Models,0.056,Large (250+)
+250 +,Visual content creation,0.051,Large (250+)
+250 +,Not sure,0.271,Large (250+)
+250 +,Business is not currently using artificial intelligence technologies,0.538,Large (250+)
+All size bands excluding 0 - 9,Data processing using machine learning,0.045,Micro (0-9)
+All size bands excluding 0 - 9,Image processing using machine learning,0.021,Micro (0-9)
+All size bands excluding 0 - 9,Text generation using Large Language Models,0.05,Micro (0-9)
+All size bands excluding 0 - 9,Visual content creation,0.035,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.103,Micro (0-9)
+All size bands excluding 0 - 9,Business is not currently using artificial intelligence technologies,0.779,Micro (0-9)
+All businesses,Data processing using machine learning,0.027,All businesses
+All businesses,Image processing using machine learning,0.018,All businesses
+All businesses,Text generation using Large Language Models,0.055,All businesses
+All businesses,Visual content creation,0.035,All businesses
+All businesses,Not sure,0.055,All businesses
+All businesses,Business is not currently using artificial intelligence technologies,0.846,All businesses
+Manufacturing,Data processing using machine learning,0.011,Industry
+Manufacturing,Robotics,0.014,Industry
+Manufacturing,Text generation using Large Language Models,0.024,Industry
+Manufacturing,Visual content creation,0.014,Industry
+Manufacturing,Not sure,0.076,Industry
+Manufacturing,Business is not currently using artificial intelligence technologies,0.857,Industry
+Construction,Autonomous vehicles,0.0,Industry
+Construction,Image processing using machine learning,0.0,Industry
+Construction,Robotics,0.0,Industry
+Construction,Visual content creation,0.017,Industry
+Construction,Other,0.0,Industry
+Construction,Not sure,0.062,Industry
+Construction,Business is not currently using artificial intelligence technologies,0.919,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Data processing using machine learning,0.012,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Image processing using machine learning,0.015,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Text generation using Large Language Models,0.04,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Visual content creation,0.018,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.0,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.074,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business is not currently using artificial intelligence technologies,0.859,Industry
+Transportation and storage,Autonomous vehicles,0.0,Industry
+Transportation and storage,Robotics,0.0,Industry
+Transportation and storage,Other,0.011,Industry
+Transportation and storage,Not sure,0.068,Industry
+Transportation and storage,Business is not currently using artificial intelligence technologies,0.916,Industry
+Accommodation and food service activities,Robotics,0.0,Industry
+Accommodation and food service activities,Other,0.0,Industry
+Accommodation and food service activities,Not sure,0.064,Industry
+Accommodation and food service activities,Business is not currently using artificial intelligence technologies,0.921,Industry
+Information and communication,Autonomous vehicles,0.018,Industry
+Information and communication,Data processing using machine learning,0.102,Industry
+Information and communication,Image processing using machine learning,0.071,Industry
+Information and communication,Text generation using Large Language Models,0.19,Industry
+Information and communication,Visual content creation,0.137,Industry
+Information and communication,Other,0.015,Industry
+Information and communication,Not sure,0.113,Industry
+Information and communication,Business is not currently using artificial intelligence technologies,0.567,Industry
+Real estate activities,Autonomous vehicles,0.0,Industry
+Real estate activities,Data processing using machine learning,0.043,Industry
+Real estate activities,Robotics,0.0,Industry
+Real estate activities,Other,0.04,Industry
+Real estate activities,Not sure,0.05,Industry
+Real estate activities,Business is not currently using artificial intelligence technologies,0.857,Industry
+"Professional, scientific and technical activities",Data processing using machine learning,0.057,Industry
+"Professional, scientific and technical activities",Image processing using machine learning,0.024,Industry
+"Professional, scientific and technical activities",Robotics,0.0,Industry
+"Professional, scientific and technical activities",Text generation using Large Language Models,0.084,Industry
+"Professional, scientific and technical activities",Visual content creation,0.059,Industry
+"Professional, scientific and technical activities",Other,0.016,Industry
+"Professional, scientific and technical activities",Not sure,0.044,Industry
+"Professional, scientific and technical activities",Business is not currently using artificial intelligence technologies,0.8,Industry
+Administrative and support service activities,Data processing using machine learning,0.028,Industry
+Administrative and support service activities,Text generation using Large Language Models,0.031,Industry
+Administrative and support service activities,Not sure,0.036,Industry
+Administrative and support service activities,Business is not currently using artificial intelligence technologies,0.902,Industry
+Education,Autonomous vehicles,0.0,Industry
+Education,Image processing using machine learning,0.0,Industry
+Education,Robotics,0.0,Industry
+Education,Text generation using Large Language Models,0.189,Industry
+Education,Visual content creation,0.05,Industry
+Education,Other,0.0,Industry
+Education,Not sure,0.104,Industry
+Education,Business is not currently using artificial intelligence technologies,0.653,Industry
+Human health and social work activities,Robotics,0.0,Industry
+Human health and social work activities,Text generation using Large Language Models,0.011,Industry
+Human health and social work activities,Not sure,0.128,Industry
+Human health and social work activities,Business is not currently using artificial intelligence technologies,0.85,Industry
+"Arts, entertainment and recreation",Autonomous vehicles,0.0,Industry
+"Arts, entertainment and recreation",Data processing using machine learning,0.027,Industry
+"Arts, entertainment and recreation",Image processing using machine learning,0.0,Industry
+"Arts, entertainment and recreation",Robotics,0.0,Industry
+"Arts, entertainment and recreation",Text generation using Large Language Models,0.052,Industry
+"Arts, entertainment and recreation",Visual content creation,0.032,Industry
+"Arts, entertainment and recreation",Not sure,0.174,Industry
+"Arts, entertainment and recreation",Business is not currently using artificial intelligence technologies,0.74,Industry
+Other service activities,Autonomous vehicles,0.0,Industry
+Other service activities,Data processing using machine learning,0.076,Industry
+Other service activities,Image processing using machine learning,0.076,Industry
+Other service activities,Robotics,0.0,Industry
+Other service activities,Text generation using Large Language Models,0.079,Industry
+Other service activities,Visual content creation,0.076,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.046,Industry
+Other service activities,Business is not currently using artificial intelligence technologies,0.876,Industry
+0 - 9,Data processing using machine learning,0.028,Micro (0-9)
+0 - 9,Image processing using machine learning,0.015,Micro (0-9)
+0 - 9,Text generation using Large Language Models,0.052,Micro (0-9)
+0 - 9,Visual content creation,0.034,Micro (0-9)
+0 - 9,Not sure,0.064,Micro (0-9)
+0 - 9,Business is not currently using artificial intelligence technologies,0.845,Micro (0-9)
+10 - 49,Data processing using machine learning,0.041,Small (10-49)
+10 - 49,Image processing using machine learning,0.016,Small (10-49)
+10 - 49,Text generation using Large Language Models,0.05,Small (10-49)
+10 - 49,Visual content creation,0.034,Small (10-49)
+10 - 49,Not sure,0.098,Small (10-49)
+10 - 49,Business is not currently using artificial intelligence technologies,0.789,Small (10-49)
+50 - 99,Data processing using machine learning,0.062,Micro (0-9)
+50 - 99,Image processing using machine learning,0.026,Micro (0-9)
+50 - 99,Robotics,0.011,Micro (0-9)
+50 - 99,Text generation using Large Language Models,0.059,Micro (0-9)
+50 - 99,Visual content creation,0.044,Micro (0-9)
+50 - 99,Not sure,0.14,Micro (0-9)
+50 - 99,Business is not currently using artificial intelligence technologies,0.715,Micro (0-9)
+100 - 249,Data processing using machine learning,0.061,Medium (50-249)
+100 - 249,Image processing using machine learning,0.038,Medium (50-249)
+100 - 249,Robotics,0.025,Medium (50-249)
+100 - 249,Text generation using Large Language Models,0.044,Medium (50-249)
+100 - 249,Visual content creation,0.04,Medium (50-249)
+100 - 249,Not sure,0.179,Medium (50-249)
+100 - 249,Business is not currently using artificial intelligence technologies,0.671,Medium (50-249)
+250 +,Data processing using machine learning,0.105,Large (250+)
+250 +,Image processing using machine learning,0.05,Large (250+)
+250 +,Robotics,0.044,Large (250+)
+250 +,Text generation using Large Language Models,0.048,Large (250+)
+250 +,Visual content creation,0.037,Large (250+)
+250 +,Not sure,0.295,Large (250+)
+250 +,Business is not currently using artificial intelligence technologies,0.518,Large (250+)
+All size bands excluding 0 - 9,Data processing using machine learning,0.045,Micro (0-9)
+All size bands excluding 0 - 9,Image processing using machine learning,0.019,Micro (0-9)
+All size bands excluding 0 - 9,Text generation using Large Language Models,0.051,Micro (0-9)
+All size bands excluding 0 - 9,Visual content creation,0.035,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.111,Micro (0-9)
+All size bands excluding 0 - 9,Business is not currently using artificial intelligence technologies,0.77,Micro (0-9)
+All businesses,Data processing using machine learning,0.03,All businesses
+All businesses,Image processing using machine learning,0.015,All businesses
+All businesses,Text generation using Large Language Models,0.051,All businesses
+All businesses,Visual content creation,0.034,All businesses
+All businesses,Not sure,0.069,All businesses
+All businesses,Business is not currently using artificial intelligence technologies,0.837,All businesses

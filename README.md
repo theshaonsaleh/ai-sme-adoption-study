@@ -10,52 +10,77 @@ This repository contains a research-style analysis of artificial intelligence (A
 
 ## Key Findings
 
-All findings calculated from ONS BICS Wave 105 (18-31 March 2024):
+All findings calculated from ONS BICS Wave 165 (21 September–4 October 2026) published weighted estimates:
 
 ### AI Adoption by Firm Size
-- **Micro firms (0-9 employees):** 16.3% currently use AI
-- **Small firms (10-49 employees):** 17.3% currently use AI
-- **Medium firms (50-249 employees):** 14.7% currently use AI  
-- **Large firms (250+ employees):** 15.2% currently use AI
+- **Micro firms (0-9 employees):** 34.3% currently use AI
+- **Small firms (10-49 employees):** 46.1% currently use AI
+- **Medium firms (50-99 employees):** 60.7% currently use AI
+- **Medium firms (100-249 employees):** 66.8% currently use AI
+- **Large firms (250+ employees):** 74.9% currently use AI
+- **All businesses:** 35.9% currently use AI
 
-**Key insight:** Firm size shows no significant correlation with AI adoption (Spearman ρ = 0.095, p = 0.30). Smaller firms are adopting AI at similar rates to larger firms.
+**Key insight:** Clear positive gradient—larger firms are substantially more likely to adopt AI. Large firms (74.9%) are more than twice as likely to use AI as micro firms (34.3%).
 
-### Top Purposes for AI Use
-1. **Improve business operations** – 35.6% of AI-using businesses
-2. **Provide or personalise products/services** – 19.2%
-3. **Develop a new product or service** – 15.5%
+![AI Adoption by Firm Size](results/figures/adoption_by_size_wave165.png)
 
-**Key insight:** Businesses primarily use AI for operational efficiency, not radical innovation.
+### AI Adoption Trend (April 2024 – September 2026)
+- **April 2024 (Wave 105):** 24.7%
+- **October 2024 (Wave 117):** 26.8%
+- **September 2026 (Wave 165):** 35.9%
 
-### Top Barriers to AI Adoption
-Among businesses facing obstacles:
-1. **Difficulty identifying business use cases** – 6.3%
-2. **Level of expertise in AI** – 6.8%
-3. **Cost** – 6.8%
+**Key insight:** 11.2 percentage point increase over 18 months (45% relative growth). AI adoption is accelerating rapidly.
 
-**Key insight:** Knowledge gaps (use cases and expertise) are as significant as financial barriers. However, 40.3% of businesses report no barriers, and 35.6% have not attempted AI adoption.
+![AI Adoption Trend](results/figures/adoption_trend.png)
+
+### Top Purposes for AI Use (Among Adopters)
+1. **Improve business operations** – 61.1% of AI-using businesses
+2. **Provide or personalise products/services** – 31.0%
+3. **Develop a new product or service** – 23.1%
+4. **Explore a new market** – 15.5%
+
+**Key insight:** Businesses overwhelmingly use AI for operational efficiency (61%), not radical innovation.
+
+![AI Purposes](results/figures/purposes_wave165.png)
+
+### Top Barriers to AI Adoption (Among All Businesses)
+1. **Level of expertise in AI** – 9.3%
+2. **Lack of trust in AI technology safety/transparency** – 9.2%
+3. **Cost** – 7.7%
+4. **Security concerns** – 6.8%
+5. **Difficulty identifying business use cases** – 6.2%
+
+**Key insight:** Knowledge and trust gaps (9.3% and 9.2%) slightly exceed cost (7.7%) as barriers. However, 49% report no barriers, and 22% have not attempted adoption.
+
+![Barriers to AI](results/figures/barriers_wave165.png)
 
 ## Repository Structure
 
 ```
 .
 ├── data/
-│   ├── raw/                          # Downloaded ONS data (not in git)
-│   └── processed/                    # Cleaned datasets (not in git)
+│   ├── raw/                          # Downloaded ONS data (gitignored)
+│   └── processed/                    # Clean weighted estimates (in git)
+│       ├── wave_165_adoption_by_size.csv
+│       ├── wave_165_barriers.csv
+│       ├── wave_165_purposes.csv
+│       ├── adoption_trend.csv
+│       └── metadata.json
 ├── notebooks/
 │   └── ai_adoption_analysis.ipynb    # Interactive Jupyter analysis
 ├── results/
-│   ├── figures/                      # Generated charts (not in git)
-│   │   ├── adoption_by_size.png
-│   │   ├── ai_purposes.png
-│   │   └── barriers.png
-│   └── analysis_summary.json         # Key statistics (not in git)
+│   ├── figures/                      # Generated charts (in git)
+│   │   ├── adoption_by_size_wave165.png
+│   │   ├── adoption_trend.png
+│   │   ├── barriers_wave165.png
+│   │   └── purposes_wave165.png
+│   └── analysis_summary_wave165.json # Key statistics (in git)
 ├── src/
 │   ├── download_data.py              # Download ONS BICS data
-│   ├── process_data.py               # Clean and structure data
-│   └── analyse.py                    # Statistical analysis & visualisation
+│   ├── process_data.py               # Extract published estimates
+│   └── analyse.py                    # Descriptive analysis & visualisation
 ├── tests/
-│   └── test_processing.py            # Unit tests for data functions
+│   └── test_processing.py            # Unit tests (6 tests, all passing)
 ├── paper.md                          # 2-page research write-up
 ├── requirements.txt                  # Python dependencies
 ├── LICENSE                           # MIT licence
@@ -65,7 +90,8 @@ Among businesses facing obstacles:
 ## Data Source
 
 **Source:** Office for National Statistics (ONS) Business Insights and Conditions Survey (BICS)  
-**Wave:** 105 (18-31 March 2024)  
+**Primary Wave:** 165 (21 September–4 October 2026)  
+**Trend Waves:** 105 (April 2024), 117 (October 2024), 165 (September 2026)  
 **URL:** https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy  
 **Licence:** Open Government Licence v3.0  
 **Licence URL:** https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/  
@@ -85,7 +111,7 @@ This analysis is fully reproducible. All figures in the paper and README are gen
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-sme-adoption-study.git
+git clone https://github.com/theshaonsaleh/ai-sme-adoption-study.git
 cd ai-sme-adoption-study
 
 # Install dependencies
@@ -97,20 +123,20 @@ pip install -r requirements.txt
 #### Full Pipeline (Command Line)
 
 ```bash
-# 1. Download ONS data
+# 1. Download ONS data (Waves 165, 117, 105)
 python3 src/download_data.py
 
-# 2. Process and clean data
+# 2. Extract published weighted estimates
 python3 src/process_data.py
 
-# 3. Run analysis and generate figures
+# 3. Generate descriptive analysis and figures
 python3 src/analyse.py
 ```
 
 After running these commands, results will be in:
-- `data/processed/` – cleaned CSV files
-- `results/figures/` – charts (PNG)
-- `results/analysis_summary.json` – key statistics
+- `data/processed/` – extracted CSV files with published estimates
+- `results/figures/` – charts (PNG, included in git)
+- `results/analysis_summary_wave165.json` – key statistics (included in git)
 
 #### Interactive Analysis (Jupyter)
 
@@ -130,42 +156,83 @@ Tests verify:
 - Data extraction functions return correct structure
 - Adoption rates are within valid ranges (0-100%)
 - Firm size categorisation works correctly
-- Summary statistics calculations are accurate
+- All 6 tests passing
 
 ## Method
 
 ### Data Processing
-1. **Download:** Fetch ONS BICS Excel files via public URLs
-2. **Extract:** Parse weighted time-series sheets for AI questions
-3. **Clean:** Structure data into analysis-ready CSV files
-4. **Categorise:** Classify firm size bands and industries
+1. **Download:** Fetch ONS BICS Excel files (Waves 165, 117, 105) via public URLs
+2. **Extract:** Parse weighted time-series sheets for AI questions, extracting ONS published estimates directly
+3. **Clean:** Structure published weighted estimates into analysis-ready CSV files
+4. **No averaging:** Extract estimates for named waves only; no pooling across rows or time points
 
 ### Analysis
-- **Descriptive statistics:** Mean, median, standard deviation of adoption rates by firm size
-- **Correlation test:** Spearman rank correlation between firm size and AI adoption
-- **Aggregation:** Top barriers, purposes, and methods identified by frequency
-- **Visualisation:** Bar charts of adoption by size, purposes, and barriers
+- **Descriptive statistics:** Direct reporting of ONS published weighted estimates by firm size
+- **Trend analysis:** Point estimates from three waves (April 2024, Oct 2024, Sept 2026)
+- **Aggregation:** Use ONS "All businesses" estimates where provided; otherwise report individual size bands
+- **Visualisation:** Bar charts and line charts of adoption, purposes, and barriers
+- **No pseudo-replication:** No statistical tests on aggregate published estimates
 
 ### Hypotheses Tested
-1. **H1:** Larger firms have higher AI adoption rates → **Not supported** (no significant correlation)
-2. **H2:** Lack of expertise is a greater barrier than cost → **Partially supported** (expertise ranks alongside cost)
-3. **H3:** Operational efficiency is the primary driver → **Supported** (35.6% cite operations improvement)
+1. **H1:** Larger firms have higher AI adoption rates → **Supported** (clear positive gradient: 34.3% to 74.9%)
+2. **H2:** Lack of expertise is a greater barrier than cost → **Supported** (9.3% vs 7.7%, modest difference)
+3. **H3:** Operational efficiency is the primary driver → **Supported** (61.1% cite operations improvement)
+
+## How Findings Were Computed
+
+All findings are calculated from ONS BICS published weighted estimates using code in this repository.
+
+### Example: AI Adoption by Firm Size (Wave 165)
+
+**Source sheet:** `AI Current Usage TS (WTD)` in `bicswave1652final.xlsx`
+
+**Extraction method:**
+1. Read row 20 (Wave 165, category "0 - 9"): "Business does not currently use AI" = 0.657
+2. Calculate adoption: 1 - 0.657 = 0.343 (34.3%)
+3. Repeat for each size band (rows 20-24)
+
+**Code:** `src/process_data.py`, function `extract_wave_165_ai_adoption()`
+
+### Example: Top Barrier (Wave 165)
+
+**Source sheet:** `AI Prevent or Delayed TS (WTD)` in `bicswave1652final.xlsx`
+
+**Extraction method:**
+1. Find "All businesses" row for Wave 165
+2. Extract "Level of expertise in artificial intelligence" column value: 0.093 (9.3%)
+3. Sort barriers by percentage, descending
+4. Top barrier: Expertise at 9.3%
+
+**Code:** `src/process_data.py`, function `extract_ai_barriers_wave_165()`
+
+### Example: Trend Calculation
+
+**Source:** All businesses rows from Waves 105, 117, 165
+
+**Method:**
+1. Wave 105: 1 - 0.753 = 0.247 (24.7%)
+2. Wave 117: 1 - 0.732 = 0.268 (26.8%)
+3. Wave 165: 1 - 0.641 = 0.359 (35.9%)
+4. Change: 35.9% - 24.7% = 11.2 percentage points over 18 months
+
+**Code:** `src/process_data.py`, function `extract_ai_adoption_trend()`
 
 ## Limitations
 
-1. **Cross-sectional data:** Single survey wave; no causal inference
+1. **Cross-sectional analysis:** Published estimates from survey waves; no causal inference possible
 2. **Self-reported AI use:** Interpretation of "AI" may vary across respondents
-3. **Aggregated across sectors:** Industry-specific patterns not examined
-4. **Simple statistical methods:** Descriptive stats and correlation only; no multivariate modelling
+3. **Aggregated across sectors:** Industry-specific patterns not examined in this study
+4. **Descriptive only:** No multivariate modelling or confidence intervals (not provided by ONS for these breakdowns)
 5. **UK-specific:** Results may not generalise to other countries
+6. **No pseudo-replication tests:** Statistical tests on aggregate published estimates avoided
 
 ## Future Work
 
-- Analyse sector-specific adoption patterns (e.g., manufacturing vs. services)
+- Analyse sector-specific adoption patterns (e.g., information & communication at 63.9% vs real estate at 16.4%)
 - Examine regional variation across UK nations and regions
-- Use longitudinal data to track adoption over time
-- Apply logistic regression with sector and regional controls
-- Investigate differences between AI technology types (LLMs, ML, robotics)
+- Extend time series as more waves become available
+- Investigate differences between AI technology types (LLMs 21%, visual content 19%, ML 9%)
+- Explore adoption intensity (% of workforce using AI, extent of use)
 
 ## Citation
 
@@ -173,10 +240,10 @@ If you use this analysis, please cite:
 
 ```
 AI Adoption in UK SMEs: A Research Study (2026)
-Data: ONS Business Insights and Conditions Survey (BICS) Wave 105
+Data: ONS Business Insights and Conditions Survey (BICS) Waves 105, 117, 165
 Licence: Open Government Licence v3.0
 Code: MIT Licence
-Repository: [this URL]
+Repository: https://github.com/theshaonsaleh/ai-sme-adoption-study
 ```
 
 ## Data Licence

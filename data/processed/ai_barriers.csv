@@ -1,0 +1,554 @@
+category,barrier,percentage,size_band
+Manufacturing,Cost,0.047,Industry
+Manufacturing,Difficulty identifying business use cases,0.074,Industry
+Manufacturing,Level of expertise in artificial intelligence,0.039,Industry
+Manufacturing,Security concerns,0.012,Industry
+Manufacturing,Uncertainty about government regulations or industry standards,0.011,Industry
+Manufacturing,Not sure,0.071,Industry
+Manufacturing,Business has not attempted to use artificial intelligence technologies,0.428,Industry
+Manufacturing,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.388,Industry
+Construction,Cost,0.024,Industry
+Construction,Difficulty identifying business use cases,0.033,Industry
+Construction,Employee concern about any potential impact of using artificial intelligence technologies,0.022,Industry
+Construction,Level of expertise in artificial intelligence,0.019,Industry
+Construction,Product or service availability,0.0,Industry
+Construction,Security concerns,0.023,Industry
+Construction,Not sure,0.053,Industry
+Construction,Business has not attempted to use artificial intelligence technologies,0.393,Industry
+Construction,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.471,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Cost,0.063,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Difficulty identifying business use cases,0.068,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Level of expertise in artificial intelligence,0.052,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Product or service availability,0.024,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Security concerns,0.027,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Uncertainty about government regulations or industry standards,0.01,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.051,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business has not attempted to use artificial intelligence technologies,0.357,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.461,Industry
+Transportation and storage,Cost,0.115,Industry
+Transportation and storage,Difficulty identifying business use cases,0.094,Industry
+Transportation and storage,Level of expertise in artificial intelligence,0.026,Industry
+Transportation and storage,Product or service availability,0.014,Industry
+Transportation and storage,Security concerns,0.014,Industry
+Transportation and storage,Uncertainty about government regulations or industry standards,0.039,Industry
+Transportation and storage,Not sure,0.099,Industry
+Transportation and storage,Business has not attempted to use artificial intelligence technologies,0.24,Industry
+Transportation and storage,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.459,Industry
+Accommodation and food service activities,Cost,0.105,Industry
+Accommodation and food service activities,Difficulty identifying business use cases,0.09,Industry
+Accommodation and food service activities,Employee concern about any potential impact of using artificial intelligence technologies,0.042,Industry
+Accommodation and food service activities,Level of expertise in artificial intelligence,0.081,Industry
+Accommodation and food service activities,Security concerns,0.032,Industry
+Accommodation and food service activities,Uncertainty about government regulations or industry standards,0.031,Industry
+Accommodation and food service activities,Not sure,0.084,Industry
+Accommodation and food service activities,Business has not attempted to use artificial intelligence technologies,0.304,Industry
+Accommodation and food service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.427,Industry
+Information and communication,Cost,0.115,Industry
+Information and communication,Difficulty identifying business use cases,0.083,Industry
+Information and communication,Employee concern about any potential impact of using artificial intelligence technologies,0.034,Industry
+Information and communication,Level of expertise in artificial intelligence,0.132,Industry
+Information and communication,Product or service availability,0.059,Industry
+Information and communication,Security concerns,0.069,Industry
+Information and communication,Uncertainty about government regulations or industry standards,0.082,Industry
+Information and communication,Other,0.042,Industry
+Information and communication,Not sure,0.133,Industry
+Information and communication,Business has not attempted to use artificial intelligence technologies,0.151,Industry
+Information and communication,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.436,Industry
+Real estate activities,Cost,0.04,Industry
+Real estate activities,Difficulty identifying business use cases,0.043,Industry
+Real estate activities,Employee concern about any potential impact of using artificial intelligence technologies,0.0,Industry
+Real estate activities,Level of expertise in artificial intelligence,0.08,Industry
+Real estate activities,Security concerns,0.0,Industry
+Real estate activities,Uncertainty about government regulations or industry standards,0.0,Industry
+Real estate activities,Other,0.0,Industry
+Real estate activities,Not sure,0.084,Industry
+Real estate activities,Business has not attempted to use artificial intelligence technologies,0.403,Industry
+Real estate activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.358,Industry
+"Professional, scientific and technical activities",Cost,0.07,Industry
+"Professional, scientific and technical activities",Difficulty identifying business use cases,0.074,Industry
+"Professional, scientific and technical activities",Employee concern about any potential impact of using artificial intelligence technologies,0.016,Industry
+"Professional, scientific and technical activities",Level of expertise in artificial intelligence,0.091,Industry
+"Professional, scientific and technical activities",Product or service availability,0.021,Industry
+"Professional, scientific and technical activities",Security concerns,0.032,Industry
+"Professional, scientific and technical activities",Uncertainty about government regulations or industry standards,0.03,Industry
+"Professional, scientific and technical activities",Other,0.02,Industry
+"Professional, scientific and technical activities",Not sure,0.066,Industry
+"Professional, scientific and technical activities",Business has not attempted to use artificial intelligence technologies,0.267,Industry
+"Professional, scientific and technical activities",Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.493,Industry
+Administrative and support service activities,Cost,0.088,Industry
+Administrative and support service activities,Difficulty identifying business use cases,0.086,Industry
+Administrative and support service activities,Employee concern about any potential impact of using artificial intelligence technologies,0.014,Industry
+Administrative and support service activities,Level of expertise in artificial intelligence,0.087,Industry
+Administrative and support service activities,Product or service availability,0.017,Industry
+Administrative and support service activities,Security concerns,0.034,Industry
+Administrative and support service activities,Uncertainty about government regulations or industry standards,0.012,Industry
+Administrative and support service activities,Other,0.021,Industry
+Administrative and support service activities,Not sure,0.091,Industry
+Administrative and support service activities,Business has not attempted to use artificial intelligence technologies,0.258,Industry
+Administrative and support service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.496,Industry
+Education,Cost,0.061,Industry
+Education,Difficulty identifying business use cases,0.076,Industry
+Education,Level of expertise in artificial intelligence,0.068,Industry
+Education,Security concerns,0.061,Industry
+Education,Uncertainty about government regulations or industry standards,0.06,Industry
+Education,Other,0.0,Industry
+Education,Not sure,0.123,Industry
+Education,Business has not attempted to use artificial intelligence technologies,0.365,Industry
+Education,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.26,Industry
+"Arts, entertainment and recreation",Difficulty identifying business use cases,0.059,Industry
+"Arts, entertainment and recreation",Product or service availability,0.025,Industry
+"Arts, entertainment and recreation",Other,0.029,Industry
+"Arts, entertainment and recreation",Not sure,0.032,Industry
+"Arts, entertainment and recreation",Business has not attempted to use artificial intelligence technologies,0.333,Industry
+"Arts, entertainment and recreation",Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.545,Industry
+Other service activities,Cost,0.118,Industry
+Other service activities,Difficulty identifying business use cases,0.062,Industry
+Other service activities,Employee concern about any potential impact of using artificial intelligence technologies,0.0,Industry
+Other service activities,Level of expertise in artificial intelligence,0.078,Industry
+Other service activities,Product or service availability,0.029,Industry
+Other service activities,Security concerns,0.0,Industry
+Other service activities,Uncertainty about government regulations or industry standards,0.03,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.188,Industry
+Other service activities,Business has not attempted to use artificial intelligence technologies,0.25,Industry
+Other service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.365,Industry
+0 - 9,Cost,0.07,Micro (0-9)
+0 - 9,Difficulty identifying business use cases,0.066,Micro (0-9)
+0 - 9,Employee concern about any potential impact of using artificial intelligence technologies,0.014,Micro (0-9)
+0 - 9,Level of expertise in artificial intelligence,0.06,Micro (0-9)
+0 - 9,Product or service availability,0.017,Micro (0-9)
+0 - 9,Security concerns,0.03,Micro (0-9)
+0 - 9,Uncertainty about government regulations or industry standards,0.027,Micro (0-9)
+0 - 9,Other,0.014,Micro (0-9)
+0 - 9,Not sure,0.073,Micro (0-9)
+0 - 9,Business has not attempted to use artificial intelligence technologies,0.308,Micro (0-9)
+0 - 9,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.464,Micro (0-9)
+10 - 49,Cost,0.07,Small (10-49)
+10 - 49,Difficulty identifying business use cases,0.082,Small (10-49)
+10 - 49,Employee concern about any potential impact of using artificial intelligence technologies,0.016,Small (10-49)
+10 - 49,Level of expertise in artificial intelligence,0.083,Small (10-49)
+10 - 49,Product or service availability,0.025,Small (10-49)
+10 - 49,Security concerns,0.034,Small (10-49)
+10 - 49,Uncertainty about government regulations or industry standards,0.021,Small (10-49)
+10 - 49,Not sure,0.106,Small (10-49)
+10 - 49,Business has not attempted to use artificial intelligence technologies,0.356,Small (10-49)
+10 - 49,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.383,Small (10-49)
+50 - 99,Cost,0.083,Micro (0-9)
+50 - 99,Difficulty identifying business use cases,0.104,Micro (0-9)
+50 - 99,Employee concern about any potential impact of using artificial intelligence technologies,0.028,Micro (0-9)
+50 - 99,Level of expertise in artificial intelligence,0.11,Micro (0-9)
+50 - 99,Product or service availability,0.037,Micro (0-9)
+50 - 99,Security concerns,0.05,Micro (0-9)
+50 - 99,Uncertainty about government regulations or industry standards,0.021,Micro (0-9)
+50 - 99,Not sure,0.152,Micro (0-9)
+50 - 99,Business has not attempted to use artificial intelligence technologies,0.3,Micro (0-9)
+50 - 99,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.343,Micro (0-9)
+100 - 249,Cost,0.071,Medium (50-249)
+100 - 249,Difficulty identifying business use cases,0.095,Medium (50-249)
+100 - 249,Employee concern about any potential impact of using artificial intelligence technologies,0.017,Medium (50-249)
+100 - 249,Level of expertise in artificial intelligence,0.096,Medium (50-249)
+100 - 249,Product or service availability,0.031,Medium (50-249)
+100 - 249,Security concerns,0.034,Medium (50-249)
+100 - 249,Uncertainty about government regulations or industry standards,0.019,Medium (50-249)
+100 - 249,Not sure,0.225,Medium (50-249)
+100 - 249,Business has not attempted to use artificial intelligence technologies,0.257,Medium (50-249)
+100 - 249,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.341,Medium (50-249)
+250 +,Cost,0.075,Large (250+)
+250 +,Difficulty identifying business use cases,0.075,Large (250+)
+250 +,Employee concern about any potential impact of using artificial intelligence technologies,0.014,Large (250+)
+250 +,Level of expertise in artificial intelligence,0.092,Large (250+)
+250 +,Product or service availability,0.026,Large (250+)
+250 +,Security concerns,0.042,Large (250+)
+250 +,Uncertainty about government regulations or industry standards,0.019,Large (250+)
+250 +,Not sure,0.329,Large (250+)
+250 +,Business has not attempted to use artificial intelligence technologies,0.176,Large (250+)
+250 +,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.328,Large (250+)
+All size bands excluding 0 - 9,Cost,0.071,Micro (0-9)
+All size bands excluding 0 - 9,Difficulty identifying business use cases,0.085,Micro (0-9)
+All size bands excluding 0 - 9,Employee concern about any potential impact of using artificial intelligence technologies,0.017,Micro (0-9)
+All size bands excluding 0 - 9,Level of expertise in artificial intelligence,0.087,Micro (0-9)
+All size bands excluding 0 - 9,Product or service availability,0.027,Micro (0-9)
+All size bands excluding 0 - 9,Security concerns,0.036,Micro (0-9)
+All size bands excluding 0 - 9,Uncertainty about government regulations or industry standards,0.021,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.118,Micro (0-9)
+All size bands excluding 0 - 9,Business has not attempted to use artificial intelligence technologies,0.344,Micro (0-9)
+All size bands excluding 0 - 9,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.376,Micro (0-9)
+All businesses,Cost,0.07,All businesses
+All businesses,Difficulty identifying business use cases,0.068,All businesses
+All businesses,Employee concern about any potential impact of using artificial intelligence technologies,0.015,All businesses
+All businesses,Level of expertise in artificial intelligence,0.063,All businesses
+All businesses,Product or service availability,0.018,All businesses
+All businesses,Security concerns,0.031,All businesses
+All businesses,Uncertainty about government regulations or industry standards,0.026,All businesses
+All businesses,Other,0.013,All businesses
+All businesses,Not sure,0.078,All businesses
+All businesses,Business has not attempted to use artificial intelligence technologies,0.312,All businesses
+All businesses,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.454,All businesses
+Manufacturing,Cost,0.109,Industry
+Manufacturing,Difficulty identifying business use cases,0.094,Industry
+Manufacturing,Level of expertise in artificial intelligence,0.065,Industry
+Manufacturing,Security concerns,0.069,Industry
+Manufacturing,Not sure,0.074,Industry
+Manufacturing,Business has not attempted to use artificial intelligence technologies,0.46,Industry
+Manufacturing,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.426,Industry
+Construction,Cost,0.015,Industry
+Construction,Difficulty identifying business use cases,0.032,Industry
+Construction,Employee concern about any potential impact of using artificial intelligence technologies,0.012,Industry
+Construction,Level of expertise in artificial intelligence,0.011,Industry
+Construction,Not sure,0.044,Industry
+Construction,Business has not attempted to use artificial intelligence technologies,0.436,Industry
+Construction,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.464,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Cost,0.035,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Difficulty identifying business use cases,0.034,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Level of expertise in artificial intelligence,0.057,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Product or service availability,0.011,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Uncertainty about government regulations or industry standards,0.01,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.109,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business has not attempted to use artificial intelligence technologies,0.385,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.431,Industry
+Transportation and storage,Cost,0.02,Industry
+Transportation and storage,Difficulty identifying business use cases,0.097,Industry
+Transportation and storage,Level of expertise in artificial intelligence,0.018,Industry
+Transportation and storage,Other,0.0,Industry
+Transportation and storage,Not sure,0.066,Industry
+Transportation and storage,Business has not attempted to use artificial intelligence technologies,0.269,Industry
+Transportation and storage,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.536,Industry
+Accommodation and food service activities,Difficulty identifying business use cases,0.029,Industry
+Accommodation and food service activities,Level of expertise in artificial intelligence,0.022,Industry
+Accommodation and food service activities,Product or service availability,0.02,Industry
+Accommodation and food service activities,Other,0.02,Industry
+Accommodation and food service activities,Not sure,0.084,Industry
+Accommodation and food service activities,Business has not attempted to use artificial intelligence technologies,0.392,Industry
+Accommodation and food service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.455,Industry
+Information and communication,Cost,0.051,Industry
+Information and communication,Difficulty identifying business use cases,0.078,Industry
+Information and communication,Employee concern about any potential impact of using artificial intelligence technologies,0.025,Industry
+Information and communication,Level of expertise in artificial intelligence,0.058,Industry
+Information and communication,Product or service availability,0.013,Industry
+Information and communication,Security concerns,0.061,Industry
+Information and communication,Uncertainty about government regulations or industry standards,0.02,Industry
+Information and communication,Other,0.013,Industry
+Information and communication,Not sure,0.108,Industry
+Information and communication,Business has not attempted to use artificial intelligence technologies,0.239,Industry
+Information and communication,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.486,Industry
+Real estate activities,Difficulty identifying business use cases,0.047,Industry
+Real estate activities,Level of expertise in artificial intelligence,0.052,Industry
+Real estate activities,Product or service availability,0.0,Industry
+Real estate activities,Security concerns,0.0,Industry
+Real estate activities,Uncertainty about government regulations or industry standards,0.04,Industry
+Real estate activities,Other,0.0,Industry
+Real estate activities,Not sure,0.058,Industry
+Real estate activities,Business has not attempted to use artificial intelligence technologies,0.431,Industry
+Real estate activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.46,Industry
+"Professional, scientific and technical activities",Cost,0.043,Industry
+"Professional, scientific and technical activities",Difficulty identifying business use cases,0.055,Industry
+"Professional, scientific and technical activities",Employee concern about any potential impact of using artificial intelligence technologies,0.017,Industry
+"Professional, scientific and technical activities",Level of expertise in artificial intelligence,0.088,Industry
+"Professional, scientific and technical activities",Product or service availability,0.016,Industry
+"Professional, scientific and technical activities",Security concerns,0.048,Industry
+"Professional, scientific and technical activities",Uncertainty about government regulations or industry standards,0.026,Industry
+"Professional, scientific and technical activities",Other,0.022,Industry
+"Professional, scientific and technical activities",Not sure,0.064,Industry
+"Professional, scientific and technical activities",Business has not attempted to use artificial intelligence technologies,0.375,Industry
+"Professional, scientific and technical activities",Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.42,Industry
+Administrative and support service activities,Cost,0.055,Industry
+Administrative and support service activities,Difficulty identifying business use cases,0.033,Industry
+Administrative and support service activities,Level of expertise in artificial intelligence,0.067,Industry
+Administrative and support service activities,Product or service availability,0.012,Industry
+Administrative and support service activities,Security concerns,0.016,Industry
+Administrative and support service activities,Uncertainty about government regulations or industry standards,0.014,Industry
+Administrative and support service activities,Not sure,0.073,Industry
+Administrative and support service activities,Business has not attempted to use artificial intelligence technologies,0.37,Industry
+Administrative and support service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.462,Industry
+Education,Cost,0.14,Industry
+Education,Difficulty identifying business use cases,0.108,Industry
+Education,Employee concern about any potential impact of using artificial intelligence technologies,0.049,Industry
+Education,Level of expertise in artificial intelligence,0.149,Industry
+Education,Security concerns,0.1,Industry
+Education,Uncertainty about government regulations or industry standards,0.1,Industry
+Education,Other,0.0,Industry
+Education,Not sure,0.024,Industry
+Education,Business has not attempted to use artificial intelligence technologies,0.376,Industry
+Education,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.359,Industry
+Human health and social work activities,Cost,0.055,Industry
+Human health and social work activities,Level of expertise in artificial intelligence,0.05,Industry
+Human health and social work activities,Product or service availability,0.046,Industry
+Human health and social work activities,Security concerns,0.049,Industry
+Human health and social work activities,Uncertainty about government regulations or industry standards,0.046,Industry
+Human health and social work activities,Not sure,0.013,Industry
+Human health and social work activities,Business has not attempted to use artificial intelligence technologies,0.341,Industry
+Human health and social work activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.538,Industry
+"Arts, entertainment and recreation",Employee concern about any potential impact of using artificial intelligence technologies,0.0,Industry
+"Arts, entertainment and recreation",Uncertainty about government regulations or industry standards,0.0,Industry
+"Arts, entertainment and recreation",Other,0.025,Industry
+"Arts, entertainment and recreation",Not sure,0.205,Industry
+"Arts, entertainment and recreation",Business has not attempted to use artificial intelligence technologies,0.227,Industry
+"Arts, entertainment and recreation",Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.531,Industry
+Other service activities,Cost,0.033,Industry
+Other service activities,Difficulty identifying business use cases,0.03,Industry
+Other service activities,Employee concern about any potential impact of using artificial intelligence technologies,0.025,Industry
+Other service activities,Level of expertise in artificial intelligence,0.06,Industry
+Other service activities,Security concerns,0.025,Industry
+Other service activities,Uncertainty about government regulations or industry standards,0.025,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.133,Industry
+Other service activities,Business has not attempted to use artificial intelligence technologies,0.301,Industry
+Other service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.529,Industry
+0 - 9,Cost,0.037,Micro (0-9)
+0 - 9,Difficulty identifying business use cases,0.045,Micro (0-9)
+0 - 9,Employee concern about any potential impact of using artificial intelligence technologies,0.011,Micro (0-9)
+0 - 9,Level of expertise in artificial intelligence,0.049,Micro (0-9)
+0 - 9,Product or service availability,0.011,Micro (0-9)
+0 - 9,Security concerns,0.025,Micro (0-9)
+0 - 9,Uncertainty about government regulations or industry standards,0.017,Micro (0-9)
+0 - 9,Other,0.01,Micro (0-9)
+0 - 9,Not sure,0.073,Micro (0-9)
+0 - 9,Business has not attempted to use artificial intelligence technologies,0.369,Micro (0-9)
+0 - 9,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.467,Micro (0-9)
+10 - 49,Cost,0.049,Small (10-49)
+10 - 49,Difficulty identifying business use cases,0.065,Small (10-49)
+10 - 49,Employee concern about any potential impact of using artificial intelligence technologies,0.011,Small (10-49)
+10 - 49,Level of expertise in artificial intelligence,0.073,Small (10-49)
+10 - 49,Product or service availability,0.017,Small (10-49)
+10 - 49,Security concerns,0.022,Small (10-49)
+10 - 49,Uncertainty about government regulations or industry standards,0.013,Small (10-49)
+10 - 49,Other,0.01,Small (10-49)
+10 - 49,Not sure,0.116,Small (10-49)
+10 - 49,Business has not attempted to use artificial intelligence technologies,0.39,Small (10-49)
+10 - 49,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.376,Small (10-49)
+50 - 99,Cost,0.066,Micro (0-9)
+50 - 99,Difficulty identifying business use cases,0.077,Micro (0-9)
+50 - 99,Employee concern about any potential impact of using artificial intelligence technologies,0.021,Micro (0-9)
+50 - 99,Level of expertise in artificial intelligence,0.093,Micro (0-9)
+50 - 99,Product or service availability,0.027,Micro (0-9)
+50 - 99,Security concerns,0.035,Micro (0-9)
+50 - 99,Uncertainty about government regulations or industry standards,0.021,Micro (0-9)
+50 - 99,Not sure,0.158,Micro (0-9)
+50 - 99,Business has not attempted to use artificial intelligence technologies,0.327,Micro (0-9)
+50 - 99,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.36,Micro (0-9)
+100 - 249,Cost,0.053,Medium (50-249)
+100 - 249,Difficulty identifying business use cases,0.069,Medium (50-249)
+100 - 249,Employee concern about any potential impact of using artificial intelligence technologies,0.017,Medium (50-249)
+100 - 249,Level of expertise in artificial intelligence,0.083,Medium (50-249)
+100 - 249,Product or service availability,0.026,Medium (50-249)
+100 - 249,Security concerns,0.034,Medium (50-249)
+100 - 249,Uncertainty about government regulations or industry standards,0.014,Medium (50-249)
+100 - 249,Not sure,0.238,Medium (50-249)
+100 - 249,Business has not attempted to use artificial intelligence technologies,0.275,Medium (50-249)
+100 - 249,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.357,Medium (50-249)
+250 +,Cost,0.06,Large (250+)
+250 +,Difficulty identifying business use cases,0.058,Large (250+)
+250 +,Employee concern about any potential impact of using artificial intelligence technologies,0.014,Large (250+)
+250 +,Level of expertise in artificial intelligence,0.073,Large (250+)
+250 +,Product or service availability,0.025,Large (250+)
+250 +,Security concerns,0.034,Large (250+)
+250 +,Uncertainty about government regulations or industry standards,0.011,Large (250+)
+250 +,Not sure,0.331,Large (250+)
+250 +,Business has not attempted to use artificial intelligence technologies,0.229,Large (250+)
+250 +,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.315,Large (250+)
+All size bands excluding 0 - 9,Cost,0.051,Micro (0-9)
+All size bands excluding 0 - 9,Difficulty identifying business use cases,0.066,Micro (0-9)
+All size bands excluding 0 - 9,Employee concern about any potential impact of using artificial intelligence technologies,0.012,Micro (0-9)
+All size bands excluding 0 - 9,Level of expertise in artificial intelligence,0.075,Micro (0-9)
+All size bands excluding 0 - 9,Product or service availability,0.019,Micro (0-9)
+All size bands excluding 0 - 9,Security concerns,0.024,Micro (0-9)
+All size bands excluding 0 - 9,Uncertainty about government regulations or industry standards,0.014,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.131,Micro (0-9)
+All size bands excluding 0 - 9,Business has not attempted to use artificial intelligence technologies,0.374,Micro (0-9)
+All size bands excluding 0 - 9,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.372,Micro (0-9)
+All businesses,Cost,0.039,All businesses
+All businesses,Difficulty identifying business use cases,0.047,All businesses
+All businesses,Employee concern about any potential impact of using artificial intelligence technologies,0.011,All businesses
+All businesses,Level of expertise in artificial intelligence,0.052,All businesses
+All businesses,Product or service availability,0.012,All businesses
+All businesses,Security concerns,0.025,All businesses
+All businesses,Uncertainty about government regulations or industry standards,0.016,All businesses
+All businesses,Other,0.01,All businesses
+All businesses,Not sure,0.08,All businesses
+All businesses,Business has not attempted to use artificial intelligence technologies,0.369,All businesses
+All businesses,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.456,All businesses
+Manufacturing,Cost,0.071,Industry
+Manufacturing,Difficulty identifying business use cases,0.055,Industry
+Manufacturing,Employee concern about any potential impact of using artificial intelligence technologies,0.024,Industry
+Manufacturing,Level of expertise in artificial intelligence,0.065,Industry
+Manufacturing,Product or service availability,0.032,Industry
+Manufacturing,Security concerns,0.034,Industry
+Manufacturing,Uncertainty about government regulations or industry standards,0.027,Industry
+Manufacturing,Not sure,0.072,Industry
+Manufacturing,Business has not attempted to use artificial intelligence technologies,0.48,Industry
+Manufacturing,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.366,Industry
+Construction,Cost,0.023,Industry
+Construction,Difficulty identifying business use cases,0.044,Industry
+Construction,Employee concern about any potential impact of using artificial intelligence technologies,0.0,Industry
+Construction,Level of expertise in artificial intelligence,0.027,Industry
+Construction,Security concerns,0.019,Industry
+Construction,Uncertainty about government regulations or industry standards,0.022,Industry
+Construction,Other,0.0,Industry
+Construction,Not sure,0.079,Industry
+Construction,Business has not attempted to use artificial intelligence technologies,0.528,Industry
+Construction,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.344,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Cost,0.036,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Difficulty identifying business use cases,0.053,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Employee concern about any potential impact of using artificial intelligence technologies,0.011,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Level of expertise in artificial intelligence,0.036,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Product or service availability,0.013,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Security concerns,0.022,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.089,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business has not attempted to use artificial intelligence technologies,0.43,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.346,Industry
+Transportation and storage,Cost,0.063,Industry
+Transportation and storage,Difficulty identifying business use cases,0.064,Industry
+Transportation and storage,Employee concern about any potential impact of using artificial intelligence technologies,0.0,Industry
+Transportation and storage,Uncertainty about government regulations or industry standards,0.0,Industry
+Transportation and storage,Not sure,0.088,Industry
+Transportation and storage,Business has not attempted to use artificial intelligence technologies,0.431,Industry
+Transportation and storage,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.412,Industry
+Accommodation and food service activities,Cost,0.048,Industry
+Accommodation and food service activities,Difficulty identifying business use cases,0.032,Industry
+Accommodation and food service activities,Level of expertise in artificial intelligence,0.017,Industry
+Accommodation and food service activities,Uncertainty about government regulations or industry standards,0.014,Industry
+Accommodation and food service activities,Other,0.028,Industry
+Accommodation and food service activities,Not sure,0.054,Industry
+Accommodation and food service activities,Business has not attempted to use artificial intelligence technologies,0.483,Industry
+Accommodation and food service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.382,Industry
+Information and communication,Cost,0.052,Industry
+Information and communication,Difficulty identifying business use cases,0.101,Industry
+Information and communication,Employee concern about any potential impact of using artificial intelligence technologies,0.042,Industry
+Information and communication,Level of expertise in artificial intelligence,0.119,Industry
+Information and communication,Product or service availability,0.039,Industry
+Information and communication,Security concerns,0.07,Industry
+Information and communication,Uncertainty about government regulations or industry standards,0.025,Industry
+Information and communication,Other,0.015,Industry
+Information and communication,Not sure,0.128,Industry
+Information and communication,Business has not attempted to use artificial intelligence technologies,0.229,Industry
+Information and communication,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.463,Industry
+Real estate activities,Difficulty identifying business use cases,0.046,Industry
+Real estate activities,Employee concern about any potential impact of using artificial intelligence technologies,0.04,Industry
+Real estate activities,Level of expertise in artificial intelligence,0.09,Industry
+Real estate activities,Product or service availability,0.04,Industry
+Real estate activities,Security concerns,0.0,Industry
+Real estate activities,Other,0.04,Industry
+Real estate activities,Not sure,0.052,Industry
+Real estate activities,Business has not attempted to use artificial intelligence technologies,0.472,Industry
+Real estate activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.348,Industry
+"Professional, scientific and technical activities",Cost,0.049,Industry
+"Professional, scientific and technical activities",Difficulty identifying business use cases,0.07,Industry
+"Professional, scientific and technical activities",Level of expertise in artificial intelligence,0.106,Industry
+"Professional, scientific and technical activities",Product or service availability,0.027,Industry
+"Professional, scientific and technical activities",Security concerns,0.038,Industry
+"Professional, scientific and technical activities",Uncertainty about government regulations or industry standards,0.023,Industry
+"Professional, scientific and technical activities",Not sure,0.047,Industry
+"Professional, scientific and technical activities",Business has not attempted to use artificial intelligence technologies,0.43,Industry
+"Professional, scientific and technical activities",Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.379,Industry
+Administrative and support service activities,Cost,0.031,Industry
+Administrative and support service activities,Difficulty identifying business use cases,0.023,Industry
+Administrative and support service activities,Level of expertise in artificial intelligence,0.065,Industry
+Administrative and support service activities,Security concerns,0.02,Industry
+Administrative and support service activities,Uncertainty about government regulations or industry standards,0.027,Industry
+Administrative and support service activities,Other,0.013,Industry
+Administrative and support service activities,Not sure,0.053,Industry
+Administrative and support service activities,Business has not attempted to use artificial intelligence technologies,0.414,Industry
+Administrative and support service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.443,Industry
+Education,Difficulty identifying business use cases,0.061,Industry
+Education,Employee concern about any potential impact of using artificial intelligence technologies,0.051,Industry
+Education,Level of expertise in artificial intelligence,0.151,Industry
+Education,Product or service availability,0.0,Industry
+Education,Security concerns,0.094,Industry
+Education,Uncertainty about government regulations or industry standards,0.046,Industry
+Education,Not sure,0.15,Industry
+Education,Business has not attempted to use artificial intelligence technologies,0.474,Industry
+Education,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.218,Industry
+Human health and social work activities,Cost,0.066,Industry
+Human health and social work activities,Difficulty identifying business use cases,0.065,Industry
+Human health and social work activities,Level of expertise in artificial intelligence,0.061,Industry
+Human health and social work activities,Security concerns,0.014,Industry
+Human health and social work activities,Not sure,0.089,Industry
+Human health and social work activities,Business has not attempted to use artificial intelligence technologies,0.39,Industry
+Human health and social work activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.441,Industry
+"Arts, entertainment and recreation",Cost,0.099,Industry
+"Arts, entertainment and recreation",Level of expertise in artificial intelligence,0.031,Industry
+"Arts, entertainment and recreation",Uncertainty about government regulations or industry standards,0.0,Industry
+"Arts, entertainment and recreation",Other,0.073,Industry
+"Arts, entertainment and recreation",Not sure,0.199,Industry
+"Arts, entertainment and recreation",Business has not attempted to use artificial intelligence technologies,0.265,Industry
+"Arts, entertainment and recreation",Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.331,Industry
+Other service activities,Difficulty identifying business use cases,0.036,Industry
+Other service activities,Employee concern about any potential impact of using artificial intelligence technologies,0.0,Industry
+Other service activities,Level of expertise in artificial intelligence,0.0,Industry
+Other service activities,Uncertainty about government regulations or industry standards,0.0,Industry
+Other service activities,Other,0.0,Industry
+Other service activities,Not sure,0.042,Industry
+Other service activities,Business has not attempted to use artificial intelligence technologies,0.576,Industry
+Other service activities,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.342,Industry
+0 - 9,Cost,0.042,Micro (0-9)
+0 - 9,Difficulty identifying business use cases,0.052,Micro (0-9)
+0 - 9,Employee concern about any potential impact of using artificial intelligence technologies,0.011,Micro (0-9)
+0 - 9,Level of expertise in artificial intelligence,0.057,Micro (0-9)
+0 - 9,Product or service availability,0.014,Micro (0-9)
+0 - 9,Security concerns,0.026,Micro (0-9)
+0 - 9,Uncertainty about government regulations or industry standards,0.017,Micro (0-9)
+0 - 9,Other,0.011,Micro (0-9)
+0 - 9,Not sure,0.07,Micro (0-9)
+0 - 9,Business has not attempted to use artificial intelligence technologies,0.436,Micro (0-9)
+0 - 9,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.384,Micro (0-9)
+10 - 49,Cost,0.044,Small (10-49)
+10 - 49,Difficulty identifying business use cases,0.057,Small (10-49)
+10 - 49,Employee concern about any potential impact of using artificial intelligence technologies,0.011,Small (10-49)
+10 - 49,Level of expertise in artificial intelligence,0.065,Small (10-49)
+10 - 49,Product or service availability,0.018,Small (10-49)
+10 - 49,Security concerns,0.022,Small (10-49)
+10 - 49,Uncertainty about government regulations or industry standards,0.012,Small (10-49)
+10 - 49,Not sure,0.134,Small (10-49)
+10 - 49,Business has not attempted to use artificial intelligence technologies,0.429,Small (10-49)
+10 - 49,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.329,Small (10-49)
+50 - 99,Cost,0.061,Micro (0-9)
+50 - 99,Difficulty identifying business use cases,0.073,Micro (0-9)
+50 - 99,Employee concern about any potential impact of using artificial intelligence technologies,0.02,Micro (0-9)
+50 - 99,Level of expertise in artificial intelligence,0.092,Micro (0-9)
+50 - 99,Product or service availability,0.022,Micro (0-9)
+50 - 99,Security concerns,0.029,Micro (0-9)
+50 - 99,Uncertainty about government regulations or industry standards,0.015,Micro (0-9)
+50 - 99,Not sure,0.18,Micro (0-9)
+50 - 99,Business has not attempted to use artificial intelligence technologies,0.376,Micro (0-9)
+50 - 99,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.309,Micro (0-9)
+100 - 249,Cost,0.054,Medium (50-249)
+100 - 249,Difficulty identifying business use cases,0.067,Medium (50-249)
+100 - 249,Employee concern about any potential impact of using artificial intelligence technologies,0.013,Medium (50-249)
+100 - 249,Level of expertise in artificial intelligence,0.083,Medium (50-249)
+100 - 249,Product or service availability,0.02,Medium (50-249)
+100 - 249,Security concerns,0.024,Medium (50-249)
+100 - 249,Uncertainty about government regulations or industry standards,0.01,Medium (50-249)
+100 - 249,Not sure,0.231,Medium (50-249)
+100 - 249,Business has not attempted to use artificial intelligence technologies,0.336,Medium (50-249)
+100 - 249,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.302,Medium (50-249)
+250 +,Cost,0.059,Large (250+)
+250 +,Difficulty identifying business use cases,0.048,Large (250+)
+250 +,Employee concern about any potential impact of using artificial intelligence technologies,0.013,Large (250+)
+250 +,Level of expertise in artificial intelligence,0.084,Large (250+)
+250 +,Product or service availability,0.026,Large (250+)
+250 +,Security concerns,0.031,Large (250+)
+250 +,Uncertainty about government regulations or industry standards,0.014,Large (250+)
+250 +,Not sure,0.343,Large (250+)
+250 +,Business has not attempted to use artificial intelligence technologies,0.239,Large (250+)
+250 +,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.295,Large (250+)
+All size bands excluding 0 - 9,Cost,0.046,Micro (0-9)
+All size bands excluding 0 - 9,Difficulty identifying business use cases,0.059,Micro (0-9)
+All size bands excluding 0 - 9,Employee concern about any potential impact of using artificial intelligence technologies,0.012,Micro (0-9)
+All size bands excluding 0 - 9,Level of expertise in artificial intelligence,0.069,Micro (0-9)
+All size bands excluding 0 - 9,Product or service availability,0.018,Micro (0-9)
+All size bands excluding 0 - 9,Security concerns,0.022,Micro (0-9)
+All size bands excluding 0 - 9,Uncertainty about government regulations or industry standards,0.012,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.148,Micro (0-9)
+All size bands excluding 0 - 9,Business has not attempted to use artificial intelligence technologies,0.415,Micro (0-9)
+All size bands excluding 0 - 9,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.325,Micro (0-9)
+All businesses,Cost,0.042,All businesses
+All businesses,Difficulty identifying business use cases,0.053,All businesses
+All businesses,Employee concern about any potential impact of using artificial intelligence technologies,0.011,All businesses
+All businesses,Level of expertise in artificial intelligence,0.059,All businesses
+All businesses,Product or service availability,0.015,All businesses
+All businesses,Security concerns,0.026,All businesses
+All businesses,Uncertainty about government regulations or industry standards,0.016,All businesses
+All businesses,Other,0.011,All businesses
+All businesses,Not sure,0.078,All businesses
+All businesses,Business has not attempted to use artificial intelligence technologies,0.434,All businesses
+All businesses,Business has not been prevented or experienced delays in the adoption of artificial intelligence technologies,0.377,All businesses

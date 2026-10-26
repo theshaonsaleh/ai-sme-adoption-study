@@ -1,11 +1,8 @@
 """
-Process and analyse ONS BICS data on AI adoption in UK SMEs.
+Process ONS BICS data on AI adoption - using proper weighted estimates.
 
-This script:
-1. Extracts AI adoption data from BICS waves
-2. Cleans and structures the data
-3. Produces analysis-ready datasets
-4. Calculates key statistics
+This script extracts ONS's published weighted estimates for a single named wave,
+avoiding pseudo-replication from pooling across rows or time points.
 
 Data licensed under the Open Government Licence v3.0.
 Source: ONS Business Insights and Conditions Survey
@@ -14,354 +11,316 @@ Source: ONS Business Insights and Conditions Survey
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from typing import Dict, Tuple
+from typing import Dict, List, Tuple
 import json
 import warnings
 warnings.filterwarnings('ignore')
 
 
-def parse_ai_sheet(df: pd.DataFrame, skip_rows: int = 4) -> pd.DataFrame:
+def extract_wave_165_ai_adoption() -> pd.DataFrame:
     """
-    Parse an AI data sheet from BICS with proper headers.
+    Extract AI adoption rates from Wave 165 (Sept 2026) - most recent data.
+    Uses ONS published weighted estimates for size bands directly.
     
-    Args:
-        df: Raw DataFrame from Excel
-        skip_rows: Number of metadata rows to skip
-        
-    Returns:
-        Cleaned DataFrame with proper column names
+    Returns DataFrame with: wave, date, size_band, uses_ai_rate
     """
-    # Use row after skipping as column names
-    new_df = df.iloc[skip_rows:].copy()
-    new_df.columns = df.iloc[skip_rows - 1].fillna('Unknown')
-    new_df = new_df.reset_index(drop=True)
+    project_root = Path(__file__).parent.parent
+    filepath = project_root / "data" / "raw" / "bics_wave_165_sept_2026.xlsx"
     
-    # Remove any remaining metadata rows
-    new_df = new_df[new_df.iloc[:, 0].notna()]
+    df = pd.read_excel(filepath, sheet_name='AI Current Usage TS (WTD)', header=None)
     
-    return new_df
-
-
-def extract_current_ai_use_by_size(filepath: Path) -> pd.DataFrame:
-    """
-    Extract current AI usage rates by firm size from BICS Wave 105.
+    # Wave 165 data starts at row 6
+    # Column 2 = Industry/Size Band
+    # Column -1 = "Business does not currently use AI technologies"
     
-    Returns DataFrame with columns: size_band, technology, adoption_rate
-    """
-    # Read the weighted time series sheet
-    df = pd.read_excel(filepath, sheet_name='Artificial Intel TS (WTD) (1)', header=None)
+    results = []
     
-    # Column 2 contains Industry/Size Band labels
-    # Row 5 onwards contains data
-    # Technology columns start from column 3 onwards
-    
-    # Get column headers from row 5
-    tech_columns = df.iloc[5, 3:].values
-    
-    data_rows = []
-    
-    # Process data rows (starting from row 6)
-    for idx in range(6, len(df)):
-        category = df.iloc[idx, 2]  # Industry/Size band is in column 2
-        
-        if pd.isna(category) or category == '':
-            continue
-        
-        # Process each technology column
-        for col_idx, tech in enumerate(tech_columns, start=3):
-            if pd.isna(tech) or tech == '':
-                continue
-                
-            value = df.iloc[idx, col_idx]
+    # Extract size band rows for Wave 165
+    for idx in range(6, 30):  # Wave 165 is in first block
+        wave_str = df.iloc[idx, 1]
+        if pd.isna(wave_str) or 'Wave 165' not in str(wave_str):
+            break
             
-            if pd.notna(value) and value != '[c]' and value != '':
-                try:
-                    rate = float(value)
-                    data_rows.append({
-                        'category': category,
-                        'technology': tech,
-                        'adoption_rate': rate
-                    })
-                except (ValueError, TypeError):
-                    pass
-    
-    return pd.DataFrame(data_rows)
-
-
-def extract_ai_purposes(filepath: Path) -> pd.DataFrame:
-    """
-    Extract what businesses use AI for from BICS Wave 105.
-    
-    Returns DataFrame with columns: category, purpose, percentage
-    """
-    # Read the weighted time series sheet for AI purposes
-    df = pd.read_excel(filepath, sheet_name='Artificial Intel TS (WTD) (2)', header=None)
-    
-    # Get column headers from row 5
-    purpose_columns = df.iloc[5, 3:].values
-    
-    data_rows = []
-    
-    # Process data rows (starting from row 6)
-    for idx in range(6, len(df)):
-        category = df.iloc[idx, 2]  # Industry/Size band is in column 2
+        category = df.iloc[idx, 2]
+        does_not_use = df.iloc[idx, -1]
         
-        if pd.isna(category) or category == '':
-            continue
-        
-        # Process each purpose column
-        for col_idx, purpose in enumerate(purpose_columns, start=3):
-            if pd.isna(purpose) or purpose == '':
-                continue
+        # Only extract size band rows
+        if pd.notna(category) and any(x in str(category) for x in 
+                                       ['0 - 9', '10 - 49', '50 - 99', 
+                                        '100 - 249', '250', 'All']):
+            if pd.notna(does_not_use) and does_not_use != '[c]':
+                uses_ai = 1.0 - float(does_not_use)
                 
-            value = df.iloc[idx, col_idx]
-            
-            if pd.notna(value) and value != '[c]' and value != '':
-                try:
-                    rate = float(value)
-                    data_rows.append({
-                        'category': category,
-                        'purpose': purpose,
-                        'percentage': rate
-                    })
-                except (ValueError, TypeError):
-                    pass
+                results.append({
+                    'wave': 165,
+                    'date': '21 September 2026 to 4 October 2026',
+                    'category': str(category).strip(),
+                    'does_not_use_ai': float(does_not_use),
+                    'uses_ai_rate': uses_ai
+                })
     
-    return pd.DataFrame(data_rows)
+    return pd.DataFrame(results)
 
 
-def extract_ai_adoption_methods(filepath: Path) -> pd.DataFrame:
+def extract_ai_adoption_trend() -> pd.DataFrame:
     """
-    Extract how businesses adopted AI technologies.
+    Extract AI adoption trend across multiple waves (165, 117, 105).
     
-    Returns DataFrame with columns: category, method, percentage
+    Returns DataFrame with wave, date, size_band, uses_ai_rate for trend analysis.
     """
-    df = pd.read_excel(filepath, sheet_name='Artificial Intel TS (WTD) (3)', header=None)
+    project_root = Path(__file__).parent.parent
     
-    # Get column headers from row 5
-    method_columns = df.iloc[5, 3:].values
+    all_data = []
     
-    data_rows = []
+    # Wave 165 (Sept 2026)
+    filepath_165 = project_root / "data" / "raw" / "bics_wave_165_sept_2026.xlsx"
+    df_165 = pd.read_excel(filepath_165, sheet_name='AI Current Usage TS (WTD)', header=None)
     
-    # Process data rows (starting from row 6)
-    for idx in range(6, len(df)):
-        category = df.iloc[idx, 2]  # Industry/Size band is in column 2
+    for idx in range(6, 30):
+        wave_str = df_165.iloc[idx, 1]
+        if pd.isna(wave_str) or 'Wave 165' not in str(wave_str):
+            break
         
-        if pd.isna(category) or category == '':
-            continue
+        category = df_165.iloc[idx, 2]
+        does_not_use = df_165.iloc[idx, -1]
         
-        # Process each method column
-        for col_idx, method in enumerate(method_columns, start=3):
-            if pd.isna(method) or method == '':
-                continue
+        if pd.notna(category) and 'All businesses' in str(category):
+            if pd.notna(does_not_use) and does_not_use != '[c]':
+                all_data.append({
+                    'wave': 165,
+                    'date': 'Sept 2026',
+                    'uses_ai_rate': 1.0 - float(does_not_use)
+                })
+                break
+    
+    # Wave 117 (Oct 2024) - extract from time series if available
+    filepath_117 = project_root / "data" / "raw" / "bics_wave_117_oct_2024.xlsx"
+    if filepath_117.exists():
+        try:
+            xls = pd.ExcelFile(filepath_117)
+            ai_sheets = [s for s in xls.sheet_names if 'Artificial Intel TS' in s]
+            if ai_sheets:
+                df_117 = pd.read_excel(filepath_117, sheet_name=ai_sheets[0], header=None)
                 
-            value = df.iloc[idx, col_idx]
-            
-            if pd.notna(value) and value != '[c]' and value != '':
-                try:
-                    rate = float(value)
-                    data_rows.append({
-                        'category': category,
-                        'method': method,
-                        'percentage': rate
-                    })
-                except (ValueError, TypeError):
-                    pass
+                for idx in range(6, 30):
+                    category = df_117.iloc[idx, 2] if df_117.shape[1] > 2 else None
+                    does_not_use = df_117.iloc[idx, -1]
+                    
+                    if pd.notna(category) and 'All' in str(category):
+                        if pd.notna(does_not_use) and does_not_use != '[c]':
+                            all_data.append({
+                                'wave': 117,
+                                'date': 'Oct 2024',
+                                'uses_ai_rate': 1.0 - float(does_not_use)
+                            })
+                            break
+        except Exception as e:
+            print(f"Note: Could not extract Wave 117 trend data: {e}")
     
-    return pd.DataFrame(data_rows)
-
-
-def extract_planned_ai_adoption(filepath: Path) -> pd.DataFrame:
-    """
-    Extract planned AI adoption within next 3 months.
-    
-    Returns DataFrame with columns: category, technology, planned_rate
-    """
-    df = pd.read_excel(filepath, sheet_name='Artificial Intel TS (WTD) (4)', header=None)
-    
-    # Get column headers from row 5
-    tech_columns = df.iloc[5, 3:].values
-    
-    data_rows = []
-    
-    # Process data rows (starting from row 6)
-    for idx in range(6, len(df)):
-        category = df.iloc[idx, 2]  # Industry/Size band is in column 2
-        
-        if pd.isna(category) or category == '':
-            continue
-        
-        # Process each technology column
-        for col_idx, tech in enumerate(tech_columns, start=3):
-            if pd.isna(tech) or tech == '':
-                continue
+    # Wave 105 (April 2024)
+    filepath_105 = project_root / "data" / "raw" / "bics_wave_105_april_2024.xlsx"
+    if filepath_105.exists():
+        try:
+            xls = pd.ExcelFile(filepath_105)
+            ai_sheets = [s for s in xls.sheet_names if 'Artificial Intel TS' in s]
+            if ai_sheets:
+                df_105 = pd.read_excel(filepath_105, sheet_name=ai_sheets[0], header=None)
                 
-            value = df.iloc[idx, col_idx]
-            
-            if pd.notna(value) and value != '[c]' and value != '':
-                try:
-                    rate = float(value)
-                    data_rows.append({
-                        'category': category,
-                        'technology': tech,
-                        'planned_rate': rate
-                    })
-                except (ValueError, TypeError):
-                    pass
+                for idx in range(6, 30):
+                    category = df_105.iloc[idx, 2] if df_105.shape[1] > 2 else None
+                    does_not_use = df_105.iloc[idx, -1]
+                    
+                    if pd.notna(category) and 'All' in str(category):
+                        if pd.notna(does_not_use) and does_not_use != '[c]':
+                            all_data.append({
+                                'wave': 105,
+                                'date': 'April 2024',
+                                'uses_ai_rate': 1.0 - float(does_not_use)
+                            })
+                            break
+        except Exception as e:
+            print(f"Note: Could not extract Wave 105 trend data: {e}")
     
-    return pd.DataFrame(data_rows)
+    return pd.DataFrame(all_data)
 
 
-def extract_ai_barriers(filepath: Path) -> pd.DataFrame:
+def extract_ai_barriers_wave_165() -> pd.DataFrame:
     """
-    Extract barriers to AI adoption.
+    Extract barriers to AI adoption from Wave 165.
     
-    Returns DataFrame with columns: category, barrier, percentage
+    Returns DataFrame with: barrier, all_businesses_pct
     """
-    df = pd.read_excel(filepath, sheet_name='Artificial Intel TS (WTD) (6)', header=None)
+    project_root = Path(__file__).parent.parent
+    filepath = project_root / "data" / "raw" / "bics_wave_165_sept_2026.xlsx"
     
-    # Get column headers from row 5
-    barrier_columns = df.iloc[5, 3:].values
+    df = pd.read_excel(filepath, sheet_name='AI Prevent or Delayed TS (WTD)', header=None)
     
-    data_rows = []
+    # Get barrier column names from row 5
+    barrier_cols = df.iloc[5, 3:].tolist()
     
-    # Process data rows (starting from row 6)
-    for idx in range(6, len(df)):
-        category = df.iloc[idx, 2]  # Industry/Size band is in column 2
+    results = []
+    
+    # Extract "All businesses" row for Wave 165
+    for idx in range(6, 30):
+        wave_str = df.iloc[idx, 1]
+        if pd.isna(wave_str) or 'Wave 165' not in str(wave_str):
+            break
         
-        if pd.isna(category) or category == '':
-            continue
+        category = df.iloc[idx, 2]
         
-        # Process each barrier column
-        for col_idx, barrier in enumerate(barrier_columns, start=3):
-            if pd.isna(barrier) or barrier == '':
-                continue
-                
-            value = df.iloc[idx, col_idx]
-            
-            if pd.notna(value) and value != '[c]' and value != '':
-                try:
-                    rate = float(value)
-                    data_rows.append({
-                        'category': category,
-                        'barrier': barrier,
-                        'percentage': rate
-                    })
-                except (ValueError, TypeError):
-                    pass
+        if pd.notna(category) and 'All businesses' in str(category):
+            # Extract barrier percentages
+            for col_idx, barrier_name in enumerate(barrier_cols, start=3):
+                if pd.notna(barrier_name) and barrier_name != '':
+                    value = df.iloc[idx, col_idx]
+                    if pd.notna(value) and value not in ['[c]', '[x]', '']:
+                        try:
+                            results.append({
+                                'barrier': str(barrier_name),
+                                'all_businesses_pct': float(value)
+                            })
+                        except (ValueError, TypeError):
+                            pass
+            break
     
-    return pd.DataFrame(data_rows)
+    return pd.DataFrame(results)
+
+
+def extract_ai_purposes_wave_165() -> pd.DataFrame:
+    """
+    Extract purposes for AI use from Wave 165.
+    
+    Returns DataFrame with: purpose, ai_adopters_pct
+    (Note: base is businesses currently using AI, not all businesses)
+    """
+    project_root = Path(__file__).parent.parent
+    filepath = project_root / "data" / "raw" / "bics_wave_165_sept_2026.xlsx"
+    
+    df = pd.read_excel(filepath, sheet_name='AI Current Purpose TS (WTD)', header=None)
+    
+    # Get purpose column names from row 5
+    purpose_cols = df.iloc[5, 3:].tolist()
+    
+    results = []
+    
+    # Extract "All businesses" row for Wave 165
+    for idx in range(6, 30):
+        wave_str = df.iloc[idx, 1]
+        if pd.isna(wave_str) or 'Wave 165' not in str(wave_str):
+            break
+        
+        category = df.iloc[idx, 2]
+        
+        if pd.notna(category) and 'All businesses' in str(category):
+            # Extract purpose percentages
+            for col_idx, purpose_name in enumerate(purpose_cols, start=3):
+                if pd.notna(purpose_name) and purpose_name != '':
+                    value = df.iloc[idx, col_idx]
+                    if pd.notna(value) and value not in ['[c]', '[x]', '']:
+                        try:
+                            results.append({
+                                'purpose': str(purpose_name),
+                                'ai_adopters_pct': float(value)
+                            })
+                        except (ValueError, TypeError):
+                            pass
+            break
+    
+    return pd.DataFrame(results)
 
 
 def categorise_size_band(category: str) -> str:
     """Categorise firm size from category string."""
     category_str = str(category).strip()
     
-    # Check in order from longest to shortest to avoid substring matches
-    if '250 +' in category_str or '250+' in category_str:
+    # Check in order from most specific to least specific
+    if 'All size bands excluding' in category_str:
+        return 'All 10+ employees'
+    elif 'All businesses' in category_str:
+        return 'All businesses'
+    elif '250 +' in category_str or '250+' in category_str:
         return 'Large (250+)'
     elif '100 - 249' in category_str or '100-249' in category_str:
-        return 'Medium (50-249)'
+        return 'Medium (100-249)'
     elif '50 - 99' in category_str or '50-99' in category_str:
-        return 'Medium (50-249)'
+        return 'Medium (50-99)'
     elif '10 - 49' in category_str or '10-49' in category_str:
         return 'Small (10-49)'
-    elif '0 - 9' in category_str or '0-9' in category_str:
+    elif '0 - 9' in category_str:
         return 'Micro (0-9)'
-    elif 'All' in category_str or 'Total' in category_str:
-        return 'All businesses'
     else:
-        # Industries
-        return 'Industry'
-
-
-def calculate_summary_stats(df: pd.DataFrame) -> Dict:
-    """Calculate summary statistics from processed data."""
-    stats = {
-        'mean': df['adoption_rate'].mean() if 'adoption_rate' in df.columns else None,
-        'median': df['adoption_rate'].median() if 'adoption_rate' in df.columns else None,
-        'std': df['adoption_rate'].std() if 'adoption_rate' in df.columns else None,
-        'min': df['adoption_rate'].min() if 'adoption_rate' in df.columns else None,
-        'max': df['adoption_rate'].max() if 'adoption_rate' in df.columns else None,
-        'count': len(df)
-    }
-    return stats
+        return 'Other'
 
 
 def main():
-    """Main processing pipeline."""
+    """Main processing pipeline - use Wave 165 weighted estimates."""
     project_root = Path(__file__).parent.parent
-    raw_data_dir = project_root / "data" / "raw"
     processed_dir = project_root / "data" / "processed"
     processed_dir.mkdir(parents=True, exist_ok=True)
     
     print("=" * 80)
     print("Processing ONS BICS AI adoption data")
+    print("Using Wave 165 (Sept 2026) weighted estimates")
     print("=" * 80)
     
-    wave_105_path = raw_data_dir / "bics_wave_105_april_2024.xlsx"
+    # Extract Wave 165 data
+    print("\n1. Extracting Wave 165 AI adoption by size band...")
+    adoption_w165 = extract_wave_165_ai_adoption()
+    adoption_w165['size_band'] = adoption_w165['category'].apply(categorise_size_band)
+    print(f"   Extracted {len(adoption_w165)} size bands")
+    print("\n   Wave 165 AI adoption rates:")
+    for _, row in adoption_w165.iterrows():
+        if row['size_band'] != 'Other':
+            print(f"     {row['size_band']:25s} {row['uses_ai_rate']:6.1%}")
     
-    if not wave_105_path.exists():
-        print(f"Error: {wave_105_path} not found")
-        return 1
+    # Extract trend data
+    print("\n2. Extracting AI adoption trend across waves...")
+    trend = extract_ai_adoption_trend()
+    print(f"   Extracted {len(trend)} time points")
+    if len(trend) > 0:
+        print("\n   Trend (All businesses):")
+        for _, row in trend.iterrows():
+            print(f"     Wave {row['wave']} ({row['date']:12s}): {row['uses_ai_rate']:6.1%}")
     
-    # Extract all datasets
-    print("\n1. Extracting current AI usage by size...")
-    current_use = extract_current_ai_use_by_size(wave_105_path)
-    current_use['size_band'] = current_use['category'].apply(categorise_size_band)
-    print(f"   Extracted {len(current_use)} records")
+    # Extract barriers
+    print("\n3. Extracting AI barriers (Wave 165)...")
+    barriers = extract_ai_barriers_wave_165()
+    print(f"   Extracted {len(barriers)} barriers")
     
-    print("\n2. Extracting AI purposes...")
-    purposes = extract_ai_purposes(wave_105_path)
-    purposes['size_band'] = purposes['category'].apply(categorise_size_band)
-    print(f"   Extracted {len(purposes)} records")
-    
-    print("\n3. Extracting AI adoption methods...")
-    methods = extract_ai_adoption_methods(wave_105_path)
-    methods['size_band'] = methods['category'].apply(categorise_size_band)
-    print(f"   Extracted {len(methods)} records")
-    
-    print("\n4. Extracting planned AI adoption...")
-    planned = extract_planned_ai_adoption(wave_105_path)
-    planned['size_band'] = planned['category'].apply(categorise_size_band)
-    print(f"   Extracted {len(planned)} records")
-    
-    print("\n5. Extracting AI barriers...")
-    barriers = extract_ai_barriers(wave_105_path)
-    barriers['size_band'] = barriers['category'].apply(categorise_size_band)
-    print(f"   Extracted {len(barriers)} records")
+    # Extract purposes
+    print("\n4. Extracting AI purposes (Wave 165)...")
+    purposes = extract_ai_purposes_wave_165()
+    print(f"   Extracted {len(purposes)} purposes")
     
     # Save processed datasets
-    print("\n6. Saving processed datasets...")
-    current_use.to_csv(processed_dir / "ai_current_use.csv", index=False)
-    purposes.to_csv(processed_dir / "ai_purposes.csv", index=False)
-    methods.to_csv(processed_dir / "ai_adoption_methods.csv", index=False)
-    planned.to_csv(processed_dir / "ai_planned_adoption.csv", index=False)
-    barriers.to_csv(processed_dir / "ai_barriers.csv", index=False)
+    print("\n5. Saving processed datasets...")
+    adoption_w165.to_csv(processed_dir / "wave_165_adoption_by_size.csv", index=False)
+    trend.to_csv(processed_dir / "adoption_trend.csv", index=False)
+    barriers.to_csv(processed_dir / "wave_165_barriers.csv", index=False)
+    purposes.to_csv(processed_dir / "wave_165_purposes.csv", index=False)
     
-    # Calculate and save summary statistics
-    print("\n7. Calculating summary statistics...")
-    stats = {
-        'current_use': calculate_summary_stats(current_use),
-        'planned': calculate_summary_stats(planned),
-        'data_extracted_from': 'ONS BICS Wave 105 (March 2024)',
+    # Save metadata
+    metadata = {
+        'primary_wave': 165,
+        'primary_wave_date': '21 September 2026 to 4 October 2026',
+        'data_source': 'ONS BICS Wave 165',
         'licence': 'Open Government Licence v3.0',
-        'source_url': 'https://www.ons.gov.uk/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy'
+        'extraction_method': 'Direct extraction of published weighted estimates from named wave',
+        'base_all_businesses': 'Adoption rates are % of all businesses',
+        'base_ai_adopters': 'Purposes are % of businesses currently using AI',
+        'note': 'No averaging across time points or mixed rows - single wave estimates only'
     }
     
-    with open(processed_dir / "summary_stats.json", 'w') as f:
-        json.dump(stats, f, indent=2)
+    with open(processed_dir / "metadata.json", 'w') as f:
+        json.dump(metadata, f, indent=2)
     
     print("\n" + "=" * 80)
     print("Processing complete")
     print("=" * 80)
     print(f"\nFiles saved to: {processed_dir}")
-    print("\nSummary:")
-    print(f"  - Current AI use: {len(current_use)} records")
-    print(f"  - AI purposes: {len(purposes)} records")
-    print(f"  - Adoption methods: {len(methods)} records")
-    print(f"  - Planned adoption: {len(planned)} records")
-    print(f"  - Barriers: {len(barriers)} records")
+    print(f"\nWave 165 summary:")
+    print(f"  - All businesses: {adoption_w165[adoption_w165['size_band']=='All businesses']['uses_ai_rate'].iloc[0]:.1%} use AI")
+    print(f"  - Businesses 10+ employees: {adoption_w165[adoption_w165['size_band']=='All 10+ employees']['uses_ai_rate'].iloc[0]:.1%} use AI")
     
     return 0
 

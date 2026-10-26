@@ -92,23 +92,23 @@ def main():
     total_count = 0
     
     # Download ONS BICS data with AI questions
-    # AI questions were introduced in Wave 92 (Sept 2023) and continued through recent waves
-    # We'll download several key waves to track AI adoption trends
+    # AI questions were introduced in Wave 92 (Sept 2023)
+    # Download most recent wave (165, Sept 2026) plus earlier waves for trend analysis
     datasets = [
         {
-            "url": "https://www.ons.gov.uk/file?uri=/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy/bicswave105/bicswave1052final.xlsx",
-            "filename": "bics_wave_105_april_2024.xlsx",
-            "description": "BICS Wave 105 (April 2024) - includes AI adoption data"
+            "url": "https://www.ons.gov.uk/file?uri=/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy/bicswave165/bicswave1652final.xlsx",
+            "filename": "bics_wave_165_sept_2026.xlsx",
+            "description": "BICS Wave 165 (September 2026) - latest AI data"
         },
         {
             "url": "https://www.ons.gov.uk/file?uri=/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy/bicswave117/bicswave1172final.xlsx",
             "filename": "bics_wave_117_oct_2024.xlsx",
-            "description": "BICS Wave 117 (October 2024) - includes AI adoption data"
+            "description": "BICS Wave 117 (October 2024) - AI data"
         },
         {
-            "url": "https://www.ons.gov.uk/file?uri=/economy/economicoutputandproductivity/output/adhocs/1953businessinsightsandconditionssurveybicswave105capitalexpenditureandartificialintelligenceadhoctables/beiswave105capitalexpenditureandartificialintelligence.xlsx",
-            "filename": "bics_wave_105_ai_adhoc_tables.xlsx",
-            "description": "BICS Wave 105 AI ad hoc tables (by sector and size)"
+            "url": "https://www.ons.gov.uk/file?uri=/economy/economicoutputandproductivity/output/datasets/businessinsightsandimpactontheukeconomy/bicswave105/bicswave1052final.xlsx",
+            "filename": "bics_wave_105_april_2024.xlsx",
+            "description": "BICS Wave 105 (April 2024) - AI data"
         }
     ]
     

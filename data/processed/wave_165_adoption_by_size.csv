@@ -1,0 +1,8 @@
+wave,date,category,does_not_use_ai,uses_ai_rate,size_band
+165,21 September 2026 to 4 October 2026,0 - 9,0.657,0.34299999999999997,Micro (0-9)
+165,21 September 2026 to 4 October 2026,10 - 49,0.539,0.46099999999999997,Small (10-49)
+165,21 September 2026 to 4 October 2026,50 - 99,0.393,0.607,Medium (50-99)
+165,21 September 2026 to 4 October 2026,100 - 249,0.332,0.6679999999999999,Medium (100-249)
+165,21 September 2026 to 4 October 2026,250 +,0.251,0.749,Large (250+)
+165,21 September 2026 to 4 October 2026,All size bands excluding 0 - 9,0.508,0.492,All 10+ employees
+165,21 September 2026 to 4 October 2026,All businesses,0.641,0.359,All businesses

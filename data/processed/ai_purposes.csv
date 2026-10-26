@@ -1,0 +1,233 @@
+category,purpose,percentage,size_band
+Manufacturing,Develop a new product or service,0.112,Industry
+Manufacturing,Explore a new market,0.062,Industry
+Manufacturing,Improve business operations,0.248,Industry
+Manufacturing,"Provide, or personalise, products or services to customers",0.244,Industry
+Manufacturing,Other,0.07,Industry
+Manufacturing,Not sure,0.189,Industry
+Manufacturing,Not applicable,0.32,Industry
+Construction,Develop a new product or service,0.084,Industry
+Construction,Improve business operations,0.019,Industry
+Construction,"Provide, or personalise, products or services to customers",0.142,Industry
+Construction,Not sure,0.35,Industry
+Construction,Not applicable,0.401,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Develop a new product or service,0.071,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Explore a new market,0.033,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Improve business operations,0.271,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,"Provide, or personalise, products or services to customers",0.091,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.032,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.37,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not applicable,0.221,Industry
+Information and communication,Develop a new product or service,0.444,Industry
+Information and communication,Explore a new market,0.196,Industry
+Information and communication,Improve business operations,0.491,Industry
+Information and communication,"Provide, or personalise, products or services to customers",0.27,Industry
+Information and communication,Other,0.071,Industry
+Information and communication,Not sure,0.231,Industry
+Information and communication,Not applicable,0.029,Industry
+"Professional, scientific and technical activities",Develop a new product or service,0.223,Industry
+"Professional, scientific and technical activities",Explore a new market,0.077,Industry
+"Professional, scientific and technical activities",Improve business operations,0.645,Industry
+"Professional, scientific and technical activities","Provide, or personalise, products or services to customers",0.235,Industry
+"Professional, scientific and technical activities",Other,0.093,Industry
+"Professional, scientific and technical activities",Not sure,0.11,Industry
+"Professional, scientific and technical activities",Not applicable,0.056,Industry
+Administrative and support service activities,Develop a new product or service,0.134,Industry
+Administrative and support service activities,Explore a new market,0.056,Industry
+Administrative and support service activities,Improve business operations,0.364,Industry
+Administrative and support service activities,"Provide, or personalise, products or services to customers",0.155,Industry
+Administrative and support service activities,Other,0.076,Industry
+Administrative and support service activities,Not sure,0.328,Industry
+Administrative and support service activities,Not applicable,0.145,Industry
+Other service activities,Develop a new product or service,0.128,Industry
+Other service activities,Explore a new market,0.079,Industry
+Other service activities,Improve business operations,0.253,Industry
+Other service activities,"Provide, or personalise, products or services to customers",0.281,Industry
+Other service activities,Other,0.075,Industry
+Other service activities,Not sure,0.436,Industry
+0 - 9,Develop a new product or service,0.196,Micro (0-9)
+0 - 9,Explore a new market,0.076,Micro (0-9)
+0 - 9,Improve business operations,0.394,Micro (0-9)
+0 - 9,"Provide, or personalise, products or services to customers",0.225,Micro (0-9)
+0 - 9,Other,0.076,Micro (0-9)
+0 - 9,Not sure,0.252,Micro (0-9)
+0 - 9,Not applicable,0.128,Micro (0-9)
+10 - 49,Develop a new product or service,0.123,Small (10-49)
+10 - 49,Explore a new market,0.062,Small (10-49)
+10 - 49,Improve business operations,0.4,Small (10-49)
+10 - 49,"Provide, or personalise, products or services to customers",0.18,Small (10-49)
+10 - 49,Other,0.038,Small (10-49)
+10 - 49,Not sure,0.34,Small (10-49)
+10 - 49,Not applicable,0.103,Small (10-49)
+50 - 99,Develop a new product or service,0.139,Micro (0-9)
+50 - 99,Explore a new market,0.051,Micro (0-9)
+50 - 99,Improve business operations,0.403,Micro (0-9)
+50 - 99,"Provide, or personalise, products or services to customers",0.163,Micro (0-9)
+50 - 99,Other,0.022,Micro (0-9)
+50 - 99,Not sure,0.349,Micro (0-9)
+50 - 99,Not applicable,0.113,Micro (0-9)
+100 - 249,Develop a new product or service,0.109,Medium (50-249)
+100 - 249,Explore a new market,0.032,Medium (50-249)
+100 - 249,Improve business operations,0.37,Medium (50-249)
+100 - 249,"Provide, or personalise, products or services to customers",0.145,Medium (50-249)
+100 - 249,Other,0.026,Medium (50-249)
+100 - 249,Not sure,0.443,Medium (50-249)
+100 - 249,Not applicable,0.074,Medium (50-249)
+250 +,Develop a new product or service,0.102,Large (250+)
+250 +,Explore a new market,0.035,Large (250+)
+250 +,Improve business operations,0.381,Large (250+)
+250 +,"Provide, or personalise, products or services to customers",0.114,Large (250+)
+250 +,Other,0.024,Large (250+)
+250 +,Not sure,0.484,Large (250+)
+250 +,Not applicable,0.072,Large (250+)
+All size bands excluding 0 - 9,Develop a new product or service,0.124,Micro (0-9)
+All size bands excluding 0 - 9,Explore a new market,0.058,Micro (0-9)
+All size bands excluding 0 - 9,Improve business operations,0.398,Micro (0-9)
+All size bands excluding 0 - 9,"Provide, or personalise, products or services to customers",0.174,Micro (0-9)
+All size bands excluding 0 - 9,Other,0.035,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.352,Micro (0-9)
+All size bands excluding 0 - 9,Not applicable,0.101,Micro (0-9)
+All businesses,Develop a new product or service,0.187,All businesses
+All businesses,Explore a new market,0.074,All businesses
+All businesses,Improve business operations,0.394,All businesses
+All businesses,"Provide, or personalise, products or services to customers",0.219,All businesses
+All businesses,Other,0.071,All businesses
+All businesses,Not sure,0.264,All businesses
+All businesses,Not applicable,0.124,All businesses
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Improve business operations,0.22,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,"Provide, or personalise, products or services to customers",0.25,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.042,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.342,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not applicable,0.118,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,"Develop a new product or service, or explore a new market",0.149,Industry
+Information and communication,Improve business operations,0.441,Industry
+Information and communication,"Provide, or personalise, products or services to customers",0.279,Industry
+Information and communication,Other,0.11,Industry
+Information and communication,Not sure,0.212,Industry
+Information and communication,Not applicable,0.076,Industry
+Information and communication,"Develop a new product or service, or explore a new market",0.389,Industry
+"Professional, scientific and technical activities",Improve business operations,0.519,Industry
+"Professional, scientific and technical activities","Provide, or personalise, products or services to customers",0.247,Industry
+"Professional, scientific and technical activities",Other,0.124,Industry
+"Professional, scientific and technical activities",Not sure,0.135,Industry
+"Professional, scientific and technical activities",Not applicable,0.107,Industry
+"Professional, scientific and technical activities","Develop a new product or service, or explore a new market",0.239,Industry
+Administrative and support service activities,Improve business operations,0.417,Industry
+Administrative and support service activities,"Provide, or personalise, products or services to customers",0.227,Industry
+Administrative and support service activities,Other,0.059,Industry
+Administrative and support service activities,Not sure,0.134,Industry
+Administrative and support service activities,Not applicable,0.221,Industry
+Administrative and support service activities,"Develop a new product or service, or explore a new market",0.062,Industry
+"Arts, entertainment and recreation",Improve business operations,0.026,Industry
+"Arts, entertainment and recreation",Other,0.184,Industry
+"Arts, entertainment and recreation",Not sure,0.595,Industry
+"Arts, entertainment and recreation",Not applicable,0.197,Industry
+"Arts, entertainment and recreation","Develop a new product or service, or explore a new market",0.0,Industry
+0 - 9,Improve business operations,0.364,Micro (0-9)
+0 - 9,"Provide, or personalise, products or services to customers",0.237,Micro (0-9)
+0 - 9,Other,0.099,Micro (0-9)
+0 - 9,Not sure,0.244,Micro (0-9)
+0 - 9,Not applicable,0.147,Micro (0-9)
+0 - 9,"Develop a new product or service, or explore a new market",0.204,Micro (0-9)
+10 - 49,Improve business operations,0.336,Small (10-49)
+10 - 49,"Provide, or personalise, products or services to customers",0.135,Small (10-49)
+10 - 49,Other,0.055,Small (10-49)
+10 - 49,Not sure,0.338,Small (10-49)
+10 - 49,Not applicable,0.169,Small (10-49)
+10 - 49,"Develop a new product or service, or explore a new market",0.117,Small (10-49)
+50 - 99,Improve business operations,0.384,Micro (0-9)
+50 - 99,"Provide, or personalise, products or services to customers",0.182,Micro (0-9)
+50 - 99,Other,0.053,Micro (0-9)
+50 - 99,Not sure,0.378,Micro (0-9)
+50 - 99,Not applicable,0.09,Micro (0-9)
+50 - 99,"Develop a new product or service, or explore a new market",0.1,Micro (0-9)
+100 - 249,Improve business operations,0.346,Medium (50-249)
+100 - 249,"Provide, or personalise, products or services to customers",0.134,Medium (50-249)
+100 - 249,Other,0.04,Medium (50-249)
+100 - 249,Not sure,0.472,Medium (50-249)
+100 - 249,Not applicable,0.072,Medium (50-249)
+100 - 249,"Develop a new product or service, or explore a new market",0.074,Medium (50-249)
+250 +,Improve business operations,0.324,Large (250+)
+250 +,"Provide, or personalise, products or services to customers",0.113,Large (250+)
+250 +,Other,0.029,Large (250+)
+250 +,Not sure,0.54,Large (250+)
+250 +,Not applicable,0.059,Large (250+)
+250 +,"Develop a new product or service, or explore a new market",0.057,Large (250+)
+All size bands excluding 0 - 9,Improve business operations,0.341,Micro (0-9)
+All size bands excluding 0 - 9,"Provide, or personalise, products or services to customers",0.137,Micro (0-9)
+All size bands excluding 0 - 9,Other,0.051,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.372,Micro (0-9)
+All size bands excluding 0 - 9,Not applicable,0.143,Micro (0-9)
+All size bands excluding 0 - 9,"Develop a new product or service, or explore a new market",0.106,Micro (0-9)
+All businesses,Improve business operations,0.361,All businesses
+All businesses,"Provide, or personalise, products or services to customers",0.221,All businesses
+All businesses,Other,0.091,All businesses
+All businesses,Not sure,0.265,All businesses
+All businesses,Not applicable,0.146,All businesses
+All businesses,"Develop a new product or service, or explore a new market",0.188,All businesses
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Improve business operations,0.304,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,"Provide, or personalise, products or services to customers",0.251,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Other,0.026,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not sure,0.374,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,Not applicable,0.086,Industry
+Wholesale and retail trade; repair of motor vehicles and motorcycles,"Develop a new product or service, or explore a new market",0.05,Industry
+Information and communication,Improve business operations,0.538,Industry
+Information and communication,"Provide, or personalise, products or services to customers",0.301,Industry
+Information and communication,Other,0.029,Industry
+Information and communication,Not sure,0.23,Industry
+Information and communication,Not applicable,0.036,Industry
+Information and communication,"Develop a new product or service, or explore a new market",0.333,Industry
+"Professional, scientific and technical activities",Improve business operations,0.462,Industry
+"Professional, scientific and technical activities","Provide, or personalise, products or services to customers",0.278,Industry
+"Professional, scientific and technical activities",Other,0.053,Industry
+"Professional, scientific and technical activities",Not sure,0.237,Industry
+"Professional, scientific and technical activities",Not applicable,0.05,Industry
+"Professional, scientific and technical activities","Develop a new product or service, or explore a new market",0.239,Industry
+Administrative and support service activities,Improve business operations,0.515,Industry
+Administrative and support service activities,"Provide, or personalise, products or services to customers",0.153,Industry
+Administrative and support service activities,Other,0.014,Industry
+Administrative and support service activities,Not sure,0.361,Industry
+Administrative and support service activities,Not applicable,0.029,Industry
+Administrative and support service activities,"Develop a new product or service, or explore a new market",0.141,Industry
+0 - 9,Improve business operations,0.373,Micro (0-9)
+0 - 9,"Provide, or personalise, products or services to customers",0.225,Micro (0-9)
+0 - 9,Other,0.043,Micro (0-9)
+0 - 9,Not sure,0.335,Micro (0-9)
+0 - 9,Not applicable,0.094,Micro (0-9)
+0 - 9,"Develop a new product or service, or explore a new market",0.161,Micro (0-9)
+10 - 49,Improve business operations,0.283,Small (10-49)
+10 - 49,"Provide, or personalise, products or services to customers",0.181,Small (10-49)
+10 - 49,Other,0.057,Small (10-49)
+10 - 49,Not sure,0.392,Small (10-49)
+10 - 49,Not applicable,0.111,Small (10-49)
+10 - 49,"Develop a new product or service, or explore a new market",0.108,Small (10-49)
+50 - 99,Improve business operations,0.334,Micro (0-9)
+50 - 99,"Provide, or personalise, products or services to customers",0.149,Micro (0-9)
+50 - 99,Other,0.037,Micro (0-9)
+50 - 99,Not sure,0.436,Micro (0-9)
+50 - 99,Not applicable,0.096,Micro (0-9)
+50 - 99,"Develop a new product or service, or explore a new market",0.113,Micro (0-9)
+100 - 249,Improve business operations,0.314,Medium (50-249)
+100 - 249,"Provide, or personalise, products or services to customers",0.101,Medium (50-249)
+100 - 249,Other,0.036,Medium (50-249)
+100 - 249,Not sure,0.486,Medium (50-249)
+100 - 249,Not applicable,0.089,Medium (50-249)
+100 - 249,"Develop a new product or service, or explore a new market",0.088,Medium (50-249)
+250 +,Improve business operations,0.302,Large (250+)
+250 +,"Provide, or personalise, products or services to customers",0.096,Large (250+)
+250 +,Other,0.026,Large (250+)
+250 +,Not sure,0.544,Large (250+)
+250 +,Not applicable,0.081,Large (250+)
+250 +,"Develop a new product or service, or explore a new market",0.062,Large (250+)
+All size bands excluding 0 - 9,Improve business operations,0.292,Micro (0-9)
+All size bands excluding 0 - 9,"Provide, or personalise, products or services to customers",0.164,Micro (0-9)
+All size bands excluding 0 - 9,Other,0.05,Micro (0-9)
+All size bands excluding 0 - 9,Not sure,0.417,Micro (0-9)
+All size bands excluding 0 - 9,Not applicable,0.105,Micro (0-9)
+All size bands excluding 0 - 9,"Develop a new product or service, or explore a new market",0.102,Micro (0-9)
+All businesses,Improve business operations,0.36,All businesses
+All businesses,"Provide, or personalise, products or services to customers",0.215,All businesses
+All businesses,Other,0.044,All businesses
+All businesses,Not sure,0.348,All businesses
+All businesses,Not applicable,0.096,All businesses
+All businesses,"Develop a new product or service, or explore a new market",0.152,All businesses

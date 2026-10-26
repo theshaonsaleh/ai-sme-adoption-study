@@ -1,14 +1,6 @@
-# Data files
+# Data files (raw ONS downloads stay private)
 data/raw/*.xlsx
-data/raw/*.csv
 data/raw/metadata.json
-data/processed/*.csv
-data/processed/*.json
-
-# Results
-results/figures/*.png
-results/figures/*.jpg
-results/*.json
 
 # Python
 __pycache__/

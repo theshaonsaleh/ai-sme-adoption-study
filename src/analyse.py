@@ -1,10 +1,10 @@
 """
-Analyse AI adoption patterns in UK SMEs using ONS BICS data.
+Analyse AI adoption patterns in UK SMEs using ONS BICS Wave 165 data.
 
-This script performs descriptive statistics and simple regression analysis
-to identify drivers of AI adoption.
+This script performs descriptive analysis of published weighted estimates
+from a single named wave, avoiding pseudo-replication.
 
-Data source: ONS Business Insights and Conditions Survey (BICS)
+Data source: ONS Business Insights and Conditions Survey (BICS) Wave 165
 Licence: Open Government Licence v3.0
 """
 
@@ -13,7 +13,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
-from scipy import stats
 import json
 
 # Set plotting style
@@ -21,296 +20,316 @@ sns.set_style("whitegrid")
 sns.set_palette("husl")
 
 
-def load_processed_data(processed_dir: Path) -> dict:
-    """Load all processed datasets."""
-    return {
-        'current_use': pd.read_csv(processed_dir / "ai_current_use.csv"),
-        'purposes': pd.read_csv(processed_dir / "ai_purposes.csv"),
-        'methods': pd.read_csv(processed_dir / "ai_adoption_methods.csv"),
-        'planned': pd.read_csv(processed_dir / "ai_planned_adoption.csv"),
-        'barriers': pd.read_csv(processed_dir / "ai_barriers.csv")
-    }
-
-
-def analyse_by_size(df: pd.DataFrame, rate_col: str = 'adoption_rate') -> pd.DataFrame:
+def plot_adoption_by_size_wave_165(results_dir: Path):
     """
-    Analyse AI adoption by firm size.
-    
-    Returns aggregated statistics by size band.
-    """
-    size_order = ['Micro (0-9)', 'Small (10-49)', 'Medium (50-249)', 
-                  'Large (250+)', 'All businesses']
-    
-    # Filter for size band categories
-    size_data = df[df['size_band'].isin(size_order)].copy()
-    
-    # Aggregate by size band
-    agg_stats = size_data.groupby('size_band')[rate_col].agg([
-        ('mean', 'mean'),
-        ('median', 'median'),
-        ('std', 'std'),
-        ('count', 'count')
-    ]).reset_index()
-    
-    # Order by size
-    agg_stats['size_band'] = pd.Categorical(
-        agg_stats['size_band'], 
-        categories=size_order, 
-        ordered=True
-    )
-    agg_stats = agg_stats.sort_values('size_band')
-    
-    return agg_stats
-
-
-def plot_adoption_by_size(results_dir: Path):
-    """
-    Create visualisation of AI adoption by firm size.
+    Visualise AI adoption by firm size from Wave 165.
     """
     processed_dir = results_dir.parent / "data" / "processed"
-    current_use = pd.read_csv(processed_dir / "ai_current_use.csv")
+    df = pd.read_csv(processed_dir / "wave_165_adoption_by_size.csv")
     
-    # Get aggregate stats
-    size_stats = analyse_by_size(current_use)
-    size_stats = size_stats[size_stats['size_band'] != 'All businesses']
+    # Filter to individual size bands (not aggregates)
+    size_order = ['Micro (0-9)', 'Small (10-49)', 'Medium (50-99)', 
+                  'Medium (100-249)', 'Large (250+)']
+    df_plot = df[df['size_band'].isin(size_order)].copy()
+    df_plot['size_band'] = pd.Categorical(df_plot['size_band'], 
+                                          categories=size_order, ordered=True)
+    df_plot = df_plot.sort_values('size_band')
     
     # Create figure
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(12, 7))
     
-    # Bar plot
-    bars = ax.bar(range(len(size_stats)), size_stats['mean'], 
-                   yerr=size_stats['std'], capsize=5, 
-                   color=['#3498db', '#2ecc71', '#f39c12', '#e74c3c'])
+    bars = ax.bar(range(len(df_plot)), df_plot['uses_ai_rate'], 
+                   color=['#3498db', '#2ecc71', '#f39c12', '#e67e22', '#e74c3c'])
     
-    ax.set_xticks(range(len(size_stats)))
-    ax.set_xticklabels(size_stats['size_band'], rotation=15, ha='right')
-    ax.set_ylabel('Mean AI Adoption Rate', fontsize=12)
-    ax.set_xlabel('Firm Size', fontsize=12)
-    ax.set_title('AI Adoption by Firm Size\n(ONS BICS Wave 105, March 2024)', 
-                 fontsize=14, fontweight='bold')
+    ax.set_xticks(range(len(df_plot)))
+    ax.set_xticklabels(df_plot['size_band'], rotation=20, ha='right')
+    ax.set_ylabel('AI Adoption Rate', fontsize=13)
+    ax.set_xlabel('Firm Size (employees)', fontsize=13)
+    ax.set_title('AI Adoption by Firm Size\nONS BICS Wave 165 (21 Sept–4 Oct 2026)', 
+                 fontsize=15, fontweight='bold', pad=20)
     
-    # Add value labels on bars
-    for i, (bar, val) in enumerate(zip(bars, size_stats['mean'])):
+    # Add value labels
+    for bar, val in zip(bars, df_plot['uses_ai_rate']):
         height = bar.get_height()
         ax.text(bar.get_x() + bar.get_width()/2., height,
                 f'{val:.1%}',
-                ha='center', va='bottom', fontsize=10)
+                ha='center', va='bottom', fontsize=11, fontweight='bold')
     
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f'{y:.0%}'))
+    ax.set_ylim(0, 0.85)
+    
+    # Add source note
+    ax.text(0.99, -0.15, 'Source: ONS BICS Wave 165\nWeighted estimates, all businesses', 
+            transform=ax.transAxes, ha='right', va='top', fontsize=9, 
+            style='italic', color='#666666')
+    
     plt.tight_layout()
     
-    output_path = results_dir / "figures" / "adoption_by_size.png"
+    output_path = results_dir / "figures" / "adoption_by_size_wave165.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     print(f"Saved: {output_path}")
     plt.close()
-    
-    return size_stats
 
 
-def plot_ai_purposes(results_dir: Path):
+def plot_adoption_trend(results_dir: Path):
     """
-    Create visualisation of what businesses use AI for.
+    Visualise AI adoption trend across waves.
     """
     processed_dir = results_dir.parent / "data" / "processed"
-    purposes = pd.read_csv(processed_dir / "ai_purposes.csv")
+    df = pd.read_csv(processed_dir / "adoption_trend.csv")
     
-    # Aggregate by purpose (across all categories)
-    purpose_agg = purposes.groupby('purpose')['percentage'].mean().sort_values(ascending=True)
-    
-    # Take top purposes
-    top_purposes = purpose_agg.tail(8)
+    if len(df) == 0:
+        print("  Skipped trend plot (no data)")
+        return
     
     # Create figure
     fig, ax = plt.subplots(figsize=(10, 6))
     
-    bars = ax.barh(range(len(top_purposes)), top_purposes.values, 
-                    color='#3498db')
-    
-    ax.set_yticks(range(len(top_purposes)))
-    ax.set_yticklabels([p[:50] for p in top_purposes.index], fontsize=10)
-    ax.set_xlabel('Mean Percentage of AI-Using Businesses', fontsize=12)
-    ax.set_title('What Do Businesses Use AI For?\n(ONS BICS Wave 105, March 2024)', 
-                 fontsize=14, fontweight='bold')
+    ax.plot(df['wave'], df['uses_ai_rate'], marker='o', linewidth=2.5, 
+            markersize=10, color='#2ecc71')
     
     # Add value labels
-    for i, (bar, val) in enumerate(zip(bars, top_purposes.values)):
-        width = bar.get_width()
-        ax.text(width, bar.get_y() + bar.get_height()/2.,
-                f' {val:.1%}',
-                va='center', fontsize=9)
+    for _, row in df.iterrows():
+        ax.text(row['wave'], row['uses_ai_rate'] + 0.015, 
+                f"{row['uses_ai_rate']:.1%}",
+                ha='center', va='bottom', fontsize=11, fontweight='bold')
     
-    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:.0%}'))
+    ax.set_xlabel('BICS Wave', fontsize=13)
+    ax.set_ylabel('AI Adoption Rate', fontsize=13)
+    ax.set_title('AI Adoption Trend in UK Businesses\n(All businesses)', 
+                 fontsize=15, fontweight='bold', pad=20)
+    
+    ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f'{y:.0%}'))
+    ax.set_ylim(0.15, 0.45)
+    ax.grid(True, alpha=0.3)
+    
+    # Add wave dates as secondary labels
+    wave_labels = []
+    for _, row in df.iterrows():
+        wave_labels.append(f"Wave {int(row['wave'])}\n{row['date']}")
+    ax.set_xticks(df['wave'])
+    ax.set_xticklabels(wave_labels, fontsize=9)
+    
+    # Add source note
+    ax.text(0.99, -0.18, 'Source: ONS BICS Waves 105, 117, 165\nWeighted estimates', 
+            transform=ax.transAxes, ha='right', va='top', fontsize=9, 
+            style='italic', color='#666666')
+    
     plt.tight_layout()
     
-    output_path = results_dir / "figures" / "ai_purposes.png"
+    output_path = results_dir / "figures" / "adoption_trend.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     print(f"Saved: {output_path}")
     plt.close()
-    
-    return top_purposes
 
 
-def plot_barriers(results_dir: Path):
+def plot_barriers_wave_165(results_dir: Path):
     """
-    Create visualisation of barriers to AI adoption.
+    Visualise top barriers to AI adoption from Wave 165.
     """
     processed_dir = results_dir.parent / "data" / "processed"
-    barriers = pd.read_csv(processed_dir / "ai_barriers.csv")
+    df = pd.read_csv(processed_dir / "wave_165_barriers.csv")
     
-    # Aggregate by barrier
-    barrier_agg = barriers.groupby('barrier')['percentage'].mean().sort_values(ascending=True)
+    # Exclude meta-categories
+    df_sub = df[~df['barrier'].str.contains(
+        'not attempted|not been prevented|Not sure|Not applicable', 
+        case=False, na=False)]
     
-    # Take top barriers
-    top_barriers = barrier_agg.tail(8)
+    # Sort and take top 8
+    df_sub = df_sub.sort_values('all_businesses_pct', ascending=True).tail(8)
     
     # Create figure
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(12, 7))
     
-    bars = ax.barh(range(len(top_barriers)), top_barriers.values, 
+    bars = ax.barh(range(len(df_sub)), df_sub['all_businesses_pct'], 
                     color='#e74c3c')
     
-    ax.set_yticks(range(len(top_barriers)))
-    # Shorten long labels
+    ax.set_yticks(range(len(df_sub)))
+    # Wrap long labels
     labels = []
-    for label in top_barriers.index:
-        if len(label) > 50:
-            labels.append(label[:47] + '...')
+    for label in df_sub['barrier']:
+        if len(label) > 55:
+            # Split at word boundary
+            words = label.split()
+            line1, line2 = [], []
+            for word in words:
+                if len(' '.join(line1)) < 45:
+                    line1.append(word)
+                else:
+                    line2.append(word)
+            labels.append(' '.join(line1) + '\n' + ' '.join(line2))
         else:
             labels.append(label)
-    ax.set_yticklabels(labels, fontsize=9)
-    ax.set_xlabel('Mean Percentage Reporting Barrier', fontsize=12)
-    ax.set_title('Top Barriers to AI Adoption\n(ONS BICS Wave 105, March 2024)', 
-                 fontsize=14, fontweight='bold')
+    ax.set_yticklabels(labels, fontsize=10)
+    
+    ax.set_xlabel('% of All Businesses Reporting Barrier', fontsize=13)
+    ax.set_title('Top Barriers to AI Adoption\nONS BICS Wave 165 (21 Sept–4 Oct 2026)', 
+                 fontsize=15, fontweight='bold', pad=20)
     
     # Add value labels
-    for i, (bar, val) in enumerate(zip(bars, top_barriers.values)):
+    for bar, val in zip(bars, df_sub['all_businesses_pct']):
         width = bar.get_width()
         ax.text(width, bar.get_y() + bar.get_height()/2.,
                 f' {val:.1%}',
-                va='center', fontsize=9)
+                va='center', fontsize=10, fontweight='bold')
     
     ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:.0%}'))
+    
+    # Add source note
+    ax.text(0.99, -0.10, 'Source: ONS BICS Wave 165\nBase: All businesses', 
+            transform=ax.transAxes, ha='right', va='top', fontsize=9, 
+            style='italic', color='#666666')
+    
     plt.tight_layout()
     
-    output_path = results_dir / "figures" / "barriers.png"
+    output_path = results_dir / "figures" / "barriers_wave165.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     print(f"Saved: {output_path}")
     plt.close()
-    
-    return top_barriers
 
 
-def perform_size_correlation_test(current_use: pd.DataFrame) -> dict:
+def plot_purposes_wave_165(results_dir: Path):
     """
-    Test correlation between firm size and AI adoption.
-    
-    Returns correlation coefficient and p-value.
+    Visualise purposes for AI use from Wave 165.
     """
-    size_order = ['Micro (0-9)', 'Small (10-49)', 'Medium (50-249)', 'Large (250+)']
+    processed_dir = results_dir.parent / "data" / "processed"
+    df = pd.read_csv(processed_dir / "wave_165_purposes.csv")
     
-    # Filter and encode size as numeric
-    size_data = current_use[current_use['size_band'].isin(size_order)].copy()
-    size_data['size_numeric'] = size_data['size_band'].map({
-        'Micro (0-9)': 1,
-        'Small (10-49)': 2,
-        'Medium (50-249)': 3,
-        'Large (250+)': 4
-    })
+    # Exclude meta-categories
+    df_sub = df[~df['purpose'].str.contains('Not sure|Not applicable|Other', 
+                                            case=False, na=False)]
     
-    # Calculate correlation
-    corr, p_value = stats.spearmanr(size_data['size_numeric'], 
-                                     size_data['adoption_rate'])
+    # Sort
+    df_sub = df_sub.sort_values('ai_adopters_pct', ascending=True)
     
-    return {
-        'correlation': corr,
-        'p_value': p_value,
-        'interpretation': 'significant' if p_value < 0.05 else 'not significant'
-    }
+    # Create figure
+    fig, ax = plt.subplots(figsize=(12, 6))
+    
+    bars = ax.barh(range(len(df_sub)), df_sub['ai_adopters_pct'], 
+                    color='#3498db')
+    
+    ax.set_yticks(range(len(df_sub)))
+    ax.set_yticklabels(df_sub['purpose'], fontsize=11)
+    
+    ax.set_xlabel('% of AI-Adopting Businesses', fontsize=13)
+    ax.set_title('What Do Businesses Use AI For?\nONS BICS Wave 165 (21 Sept–4 Oct 2026)', 
+                 fontsize=15, fontweight='bold', pad=20)
+    
+    # Add value labels
+    for bar, val in zip(bars, df_sub['ai_adopters_pct']):
+        width = bar.get_width()
+        ax.text(width, bar.get_y() + bar.get_height()/2.,
+                f' {val:.1%}',
+                va='center', fontsize=10, fontweight='bold')
+    
+    ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:.0%}'))
+    
+    # Add source note
+    ax.text(0.99, -0.13, 'Source: ONS BICS Wave 165\nBase: Businesses currently using AI', 
+            transform=ax.transAxes, ha='right', va='top', fontsize=9, 
+            style='italic', color='#666666')
+    
+    plt.tight_layout()
+    
+    output_path = results_dir / "figures" / "purposes_wave165.png"
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"Saved: {output_path}")
+    plt.close()
 
 
-def generate_results_summary(data: dict, results_dir: Path) -> dict:
+def generate_summary_wave_165(results_dir: Path) -> dict:
     """
-    Generate summary of key findings.
+    Generate summary of key findings from Wave 165.
     """
+    processed_dir = results_dir.parent / "data" / "processed"
+    
+    adoption = pd.read_csv(processed_dir / "wave_165_adoption_by_size.csv")
+    barriers = pd.read_csv(processed_dir / "wave_165_barriers.csv")
+    purposes = pd.read_csv(processed_dir / "wave_165_purposes.csv")
+    trend = pd.read_csv(processed_dir / "adoption_trend.csv")
+    
     summary = {
-        'data_source': 'ONS BICS Wave 105 (18-31 March 2024)',
+        'data_source': 'ONS BICS Wave 165 (21 September–4 October 2026)',
         'licence': 'Open Government Licence v3.0',
+        'extraction_method': 'Direct extraction of published weighted estimates',
+        'note': 'No pseudo-replication - single wave estimates only',
         'key_findings': {}
     }
     
-    # Size analysis
-    size_stats = analyse_by_size(data['current_use'])
-    size_stats_clean = size_stats[size_stats['size_band'] != 'All businesses']
+    # Adoption by size
+    summary['key_findings']['by_size'] = {}
+    for _, row in adoption.iterrows():
+        if row['size_band'] not in ['Other', 'All 10+ employees']:
+            summary['key_findings']['by_size'][row['size_band']] = float(row['uses_ai_rate'])
     
-    summary['key_findings']['by_size'] = {
-        'micro_mean': float(size_stats_clean[size_stats_clean['size_band'] == 'Micro (0-9)']['mean'].iloc[0]),
-        'small_mean': float(size_stats_clean[size_stats_clean['size_band'] == 'Small (10-49)']['mean'].iloc[0]),
-        'medium_mean': float(size_stats_clean[size_stats_clean['size_band'] == 'Medium (50-249)']['mean'].iloc[0]),
-        'large_mean': float(size_stats_clean[size_stats_clean['size_band'] == 'Large (250+)']['mean'].iloc[0])
-    }
+    # Trend
+    if len(trend) > 0:
+        summary['key_findings']['trend'] = []
+        for _, row in trend.sort_values('wave').iterrows():
+            summary['key_findings']['trend'].append({
+                'wave': int(row['wave']),
+                'date': row['date'],
+                'adoption_rate': float(row['uses_ai_rate'])
+            })
     
-    # Correlation test
-    corr_result = perform_size_correlation_test(data['current_use'])
-    summary['key_findings']['size_correlation'] = corr_result
-    
-    # Top barriers
-    barriers_agg = data['barriers'].groupby('barrier')['percentage'].mean().sort_values(ascending=False)
+    # Top barriers (substantive only)
+    barriers_sub = barriers[~barriers['barrier'].str.contains(
+        'not attempted|not been prevented|Not sure', case=False, na=False)]
+    barriers_sorted = barriers_sub.sort_values('all_businesses_pct', ascending=False)
     summary['key_findings']['top_barriers'] = {
-        str(k): float(v) for k, v in barriers_agg.head(5).items()
+        str(row['barrier']): float(row['all_businesses_pct'])
+        for _, row in barriers_sorted.head(5).iterrows()
     }
     
     # Top purposes
-    purposes_agg = data['purposes'].groupby('purpose')['percentage'].mean().sort_values(ascending=False)
+    purposes_sub = purposes[~purposes['purpose'].str.contains(
+        'Not sure|Not applicable|Other', case=False, na=False)]
+    purposes_sorted = purposes_sub.sort_values('ai_adopters_pct', ascending=False)
     summary['key_findings']['top_purposes'] = {
-        str(k): float(v) for k, v in purposes_agg.head(5).items()
+        str(row['purpose']): float(row['ai_adopters_pct'])
+        for _, row in purposes_sorted.iterrows()
     }
     
-    # Save summary
-    output_path = results_dir / "analysis_summary.json"
+    # Save
+    output_path = results_dir / "analysis_summary_wave165.json"
     with open(output_path, 'w') as f:
         json.dump(summary, f, indent=2)
     
     print(f"\nSaved summary: {output_path}")
-    
     return summary
 
 
 def main():
     """Main analysis pipeline."""
     project_root = Path(__file__).parent.parent
-    processed_dir = project_root / "data" / "processed"
     results_dir = project_root / "results"
     figures_dir = results_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
     
     print("=" * 80)
     print("Analysing AI adoption in UK SMEs")
+    print("Using ONS BICS Wave 165 (Sept 2026) weighted estimates")
     print("=" * 80)
     
-    # Load data
-    print("\n1. Loading processed data...")
-    data = load_processed_data(processed_dir)
-    
     # Generate visualisations
-    print("\n2. Creating visualisations...")
-    plot_adoption_by_size(results_dir)
-    plot_ai_purposes(results_dir)
-    plot_barriers(results_dir)
-    
-    # Perform statistical tests
-    print("\n3. Performing statistical analysis...")
-    corr_result = perform_size_correlation_test(data['current_use'])
-    print(f"   Firm size vs AI adoption correlation: {corr_result['correlation']:.3f}")
-    print(f"   P-value: {corr_result['p_value']:.4f} ({corr_result['interpretation']})")
+    print("\n1. Creating visualisations...")
+    plot_adoption_by_size_wave_165(results_dir)
+    plot_adoption_trend(results_dir)
+    plot_barriers_wave_165(results_dir)
+    plot_purposes_wave_165(results_dir)
     
     # Generate summary
-    print("\n4. Generating results summary...")
-    summary = generate_results_summary(data, results_dir)
+    print("\n2. Generating results summary...")
+    summary = generate_summary_wave_165(results_dir)
     
     print("\n" + "=" * 80)
     print("Analysis complete")
     print("=" * 80)
     print(f"\nOutputs saved to: {results_dir}")
+    print("\nKey findings from Wave 165:")
+    print(f"  - All businesses: {summary['key_findings']['by_size']['All businesses']:.1%} use AI")
+    print(f"  - Micro (0-9): {summary['key_findings']['by_size']['Micro (0-9)']:.1%}")
+    print(f"  - Large (250+): {summary['key_findings']['by_size']['Large (250+)']:.1%}")
     
     return 0
 
